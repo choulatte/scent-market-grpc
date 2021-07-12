@@ -1,0 +1,73 @@
+syntax = "proto3";
+package grpc;
+
+option java_package = "com.choulatte.pay.grpc";
+option java_outer_classname = "PaymentServiceOuterClass";
+
+service PaymentService {
+  rpc doPayment(TransactionRequest) returns (TransactionResponse);
+  rpc doHolding(HoldingRequest) returns (HoldingResponse);
+  rpc extendHolding(HoldingRequest) returns (HoldingResponse);
+  rpc clearHolding(HoldingRequest) returns (Response);
+}
+
+message Response {
+  enum Result {
+    OK = 0;
+    BAD_REQUEST = 1;
+    NOT_FOUND = 2;
+    CONFLICT = 3;
+  }
+  Result result = 1;
+}
+
+message Transaction {
+  int64 id = 1;
+  int64 accountId = 2;
+
+  enum Type {
+    NOT_SELECTED = 0;
+    DEPOSIT = 1;
+    WITHDRAWAL = 2;
+  }
+  Type type = 3;
+  int64 amount = 4;
+  int64 balace = 5;
+  int64 label = 6;
+  int64 recordedDate = 7;
+}
+
+message Holding {
+  int64 id = 1;
+  int64 accountId = 2;
+  int64 amount = 3;
+  int64 balance = 4;
+  string expiredDate = 5;
+  string recordedDate = 6;
+  string lastModifiedDate = 7;
+
+  enum Status {
+    NOT_SELECTED = 0;
+    HOLDED = 1;
+    CLOSED = 2;
+  }
+  Status status = 8;
+}
+
+message TransactionRequest {
+  Transaction transaction = 1;
+}
+
+message TransactionResponse {
+  Response result = 1;
+  Transaction transaction = 2;
+}
+
+message HoldingRequest {
+  Holding holding = 1;
+}
+
+message HoldingResponse {
+  Response result = 1;
+  Holding holding = 2;
+}
