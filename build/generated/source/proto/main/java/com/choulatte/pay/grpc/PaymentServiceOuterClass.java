@@ -699,10 +699,10 @@ public final class PaymentServiceOuterClass {
     long getAmount();
 
     /**
-     * <code>int64 balace = 5;</code>
-     * @return The balace.
+     * <code>int64 balance = 5;</code>
+     * @return The balance.
      */
-    long getBalace();
+    long getBalance();
 
     /**
      * <code>int64 label = 6;</code>
@@ -785,7 +785,7 @@ public final class PaymentServiceOuterClass {
             }
             case 40: {
 
-              balace_ = input.readInt64();
+              balance_ = input.readInt64();
               break;
             }
             case 48: {
@@ -999,15 +999,15 @@ public final class PaymentServiceOuterClass {
       return amount_;
     }
 
-    public static final int BALACE_FIELD_NUMBER = 5;
-    private long balace_;
+    public static final int BALANCE_FIELD_NUMBER = 5;
+    private long balance_;
     /**
-     * <code>int64 balace = 5;</code>
-     * @return The balace.
+     * <code>int64 balance = 5;</code>
+     * @return The balance.
      */
     @java.lang.Override
-    public long getBalace() {
-      return balace_;
+    public long getBalance() {
+      return balance_;
     }
 
     public static final int LABEL_FIELD_NUMBER = 6;
@@ -1058,8 +1058,8 @@ public final class PaymentServiceOuterClass {
       if (amount_ != 0L) {
         output.writeInt64(4, amount_);
       }
-      if (balace_ != 0L) {
-        output.writeInt64(5, balace_);
+      if (balance_ != 0L) {
+        output.writeInt64(5, balance_);
       }
       if (label_ != 0L) {
         output.writeInt64(6, label_);
@@ -1092,9 +1092,9 @@ public final class PaymentServiceOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeInt64Size(4, amount_);
       }
-      if (balace_ != 0L) {
+      if (balance_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(5, balace_);
+          .computeInt64Size(5, balance_);
       }
       if (label_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
@@ -1126,8 +1126,8 @@ public final class PaymentServiceOuterClass {
       if (type_ != other.type_) return false;
       if (getAmount()
           != other.getAmount()) return false;
-      if (getBalace()
-          != other.getBalace()) return false;
+      if (getBalance()
+          != other.getBalance()) return false;
       if (getLabel()
           != other.getLabel()) return false;
       if (getRecordedDate()
@@ -1154,9 +1154,9 @@ public final class PaymentServiceOuterClass {
       hash = (37 * hash) + AMOUNT_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getAmount());
-      hash = (37 * hash) + BALACE_FIELD_NUMBER;
+      hash = (37 * hash) + BALANCE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getBalace());
+          getBalance());
       hash = (37 * hash) + LABEL_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getLabel());
@@ -1304,7 +1304,7 @@ public final class PaymentServiceOuterClass {
 
         amount_ = 0L;
 
-        balace_ = 0L;
+        balance_ = 0L;
 
         label_ = 0L;
 
@@ -1340,7 +1340,7 @@ public final class PaymentServiceOuterClass {
         result.accountId_ = accountId_;
         result.type_ = type_;
         result.amount_ = amount_;
-        result.balace_ = balace_;
+        result.balance_ = balance_;
         result.label_ = label_;
         result.recordedDate_ = recordedDate_;
         onBuilt();
@@ -1403,8 +1403,8 @@ public final class PaymentServiceOuterClass {
         if (other.getAmount() != 0L) {
           setAmount(other.getAmount());
         }
-        if (other.getBalace() != 0L) {
-          setBalace(other.getBalace());
+        if (other.getBalance() != 0L) {
+          setBalance(other.getBalance());
         }
         if (other.getLabel() != 0L) {
           setLabel(other.getLabel());
@@ -1588,33 +1588,33 @@ public final class PaymentServiceOuterClass {
         return this;
       }
 
-      private long balace_ ;
+      private long balance_ ;
       /**
-       * <code>int64 balace = 5;</code>
-       * @return The balace.
+       * <code>int64 balance = 5;</code>
+       * @return The balance.
        */
       @java.lang.Override
-      public long getBalace() {
-        return balace_;
+      public long getBalance() {
+        return balance_;
       }
       /**
-       * <code>int64 balace = 5;</code>
-       * @param value The balace to set.
+       * <code>int64 balance = 5;</code>
+       * @param value The balance to set.
        * @return This builder for chaining.
        */
-      public Builder setBalace(long value) {
+      public Builder setBalance(long value) {
         
-        balace_ = value;
+        balance_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int64 balace = 5;</code>
+       * <code>int64 balance = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearBalace() {
+      public Builder clearBalance() {
         
-        balace_ = 0L;
+        balance_ = 0L;
         onChanged();
         return this;
       }
@@ -1762,40 +1762,22 @@ public final class PaymentServiceOuterClass {
     long getBalance();
 
     /**
-     * <code>string expiredDate = 5;</code>
+     * <code>int64 expiredDate = 5;</code>
      * @return The expiredDate.
      */
-    java.lang.String getExpiredDate();
-    /**
-     * <code>string expiredDate = 5;</code>
-     * @return The bytes for expiredDate.
-     */
-    com.google.protobuf.ByteString
-        getExpiredDateBytes();
+    long getExpiredDate();
 
     /**
-     * <code>string recordedDate = 6;</code>
+     * <code>int64 recordedDate = 6;</code>
      * @return The recordedDate.
      */
-    java.lang.String getRecordedDate();
-    /**
-     * <code>string recordedDate = 6;</code>
-     * @return The bytes for recordedDate.
-     */
-    com.google.protobuf.ByteString
-        getRecordedDateBytes();
+    long getRecordedDate();
 
     /**
-     * <code>string lastModifiedDate = 7;</code>
+     * <code>int64 lastModifiedDate = 7;</code>
      * @return The lastModifiedDate.
      */
-    java.lang.String getLastModifiedDate();
-    /**
-     * <code>string lastModifiedDate = 7;</code>
-     * @return The bytes for lastModifiedDate.
-     */
-    com.google.protobuf.ByteString
-        getLastModifiedDateBytes();
+    long getLastModifiedDate();
 
     /**
      * <code>.grpc.Holding.Status status = 8;</code>
@@ -1821,9 +1803,6 @@ public final class PaymentServiceOuterClass {
       super(builder);
     }
     private Holding() {
-      expiredDate_ = "";
-      recordedDate_ = "";
-      lastModifiedDate_ = "";
       status_ = 0;
     }
 
@@ -1877,22 +1856,19 @@ public final class PaymentServiceOuterClass {
               balance_ = input.readInt64();
               break;
             }
-            case 42: {
-              java.lang.String s = input.readStringRequireUtf8();
+            case 40: {
 
-              expiredDate_ = s;
+              expiredDate_ = input.readInt64();
               break;
             }
-            case 50: {
-              java.lang.String s = input.readStringRequireUtf8();
+            case 48: {
 
-              recordedDate_ = s;
+              recordedDate_ = input.readInt64();
               break;
             }
-            case 58: {
-              java.lang.String s = input.readStringRequireUtf8();
+            case 56: {
 
-              lastModifiedDate_ = s;
+              lastModifiedDate_ = input.readInt64();
               break;
             }
             case 64: {
@@ -2095,117 +2071,36 @@ public final class PaymentServiceOuterClass {
     }
 
     public static final int EXPIREDDATE_FIELD_NUMBER = 5;
-    private volatile java.lang.Object expiredDate_;
+    private long expiredDate_;
     /**
-     * <code>string expiredDate = 5;</code>
+     * <code>int64 expiredDate = 5;</code>
      * @return The expiredDate.
      */
     @java.lang.Override
-    public java.lang.String getExpiredDate() {
-      java.lang.Object ref = expiredDate_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        expiredDate_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string expiredDate = 5;</code>
-     * @return The bytes for expiredDate.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getExpiredDateBytes() {
-      java.lang.Object ref = expiredDate_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        expiredDate_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
+    public long getExpiredDate() {
+      return expiredDate_;
     }
 
     public static final int RECORDEDDATE_FIELD_NUMBER = 6;
-    private volatile java.lang.Object recordedDate_;
+    private long recordedDate_;
     /**
-     * <code>string recordedDate = 6;</code>
+     * <code>int64 recordedDate = 6;</code>
      * @return The recordedDate.
      */
     @java.lang.Override
-    public java.lang.String getRecordedDate() {
-      java.lang.Object ref = recordedDate_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        recordedDate_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string recordedDate = 6;</code>
-     * @return The bytes for recordedDate.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getRecordedDateBytes() {
-      java.lang.Object ref = recordedDate_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        recordedDate_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
+    public long getRecordedDate() {
+      return recordedDate_;
     }
 
     public static final int LASTMODIFIEDDATE_FIELD_NUMBER = 7;
-    private volatile java.lang.Object lastModifiedDate_;
+    private long lastModifiedDate_;
     /**
-     * <code>string lastModifiedDate = 7;</code>
+     * <code>int64 lastModifiedDate = 7;</code>
      * @return The lastModifiedDate.
      */
     @java.lang.Override
-    public java.lang.String getLastModifiedDate() {
-      java.lang.Object ref = lastModifiedDate_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        lastModifiedDate_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string lastModifiedDate = 7;</code>
-     * @return The bytes for lastModifiedDate.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getLastModifiedDateBytes() {
-      java.lang.Object ref = lastModifiedDate_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        lastModifiedDate_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
+    public long getLastModifiedDate() {
+      return lastModifiedDate_;
     }
 
     public static final int STATUS_FIELD_NUMBER = 8;
@@ -2253,14 +2148,14 @@ public final class PaymentServiceOuterClass {
       if (balance_ != 0L) {
         output.writeInt64(4, balance_);
       }
-      if (!getExpiredDateBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, expiredDate_);
+      if (expiredDate_ != 0L) {
+        output.writeInt64(5, expiredDate_);
       }
-      if (!getRecordedDateBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, recordedDate_);
+      if (recordedDate_ != 0L) {
+        output.writeInt64(6, recordedDate_);
       }
-      if (!getLastModifiedDateBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 7, lastModifiedDate_);
+      if (lastModifiedDate_ != 0L) {
+        output.writeInt64(7, lastModifiedDate_);
       }
       if (status_ != com.choulatte.pay.grpc.PaymentServiceOuterClass.Holding.Status.NOT_SELECTED.getNumber()) {
         output.writeEnum(8, status_);
@@ -2290,14 +2185,17 @@ public final class PaymentServiceOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeInt64Size(4, balance_);
       }
-      if (!getExpiredDateBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, expiredDate_);
+      if (expiredDate_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(5, expiredDate_);
       }
-      if (!getRecordedDateBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, recordedDate_);
+      if (recordedDate_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(6, recordedDate_);
       }
-      if (!getLastModifiedDateBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, lastModifiedDate_);
+      if (lastModifiedDate_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(7, lastModifiedDate_);
       }
       if (status_ != com.choulatte.pay.grpc.PaymentServiceOuterClass.Holding.Status.NOT_SELECTED.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
@@ -2326,12 +2224,12 @@ public final class PaymentServiceOuterClass {
           != other.getAmount()) return false;
       if (getBalance()
           != other.getBalance()) return false;
-      if (!getExpiredDate()
-          .equals(other.getExpiredDate())) return false;
-      if (!getRecordedDate()
-          .equals(other.getRecordedDate())) return false;
-      if (!getLastModifiedDate()
-          .equals(other.getLastModifiedDate())) return false;
+      if (getExpiredDate()
+          != other.getExpiredDate()) return false;
+      if (getRecordedDate()
+          != other.getRecordedDate()) return false;
+      if (getLastModifiedDate()
+          != other.getLastModifiedDate()) return false;
       if (status_ != other.status_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
@@ -2357,11 +2255,14 @@ public final class PaymentServiceOuterClass {
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getBalance());
       hash = (37 * hash) + EXPIREDDATE_FIELD_NUMBER;
-      hash = (53 * hash) + getExpiredDate().hashCode();
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getExpiredDate());
       hash = (37 * hash) + RECORDEDDATE_FIELD_NUMBER;
-      hash = (53 * hash) + getRecordedDate().hashCode();
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getRecordedDate());
       hash = (37 * hash) + LASTMODIFIEDDATE_FIELD_NUMBER;
-      hash = (53 * hash) + getLastModifiedDate().hashCode();
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getLastModifiedDate());
       hash = (37 * hash) + STATUS_FIELD_NUMBER;
       hash = (53 * hash) + status_;
       hash = (29 * hash) + unknownFields.hashCode();
@@ -2505,11 +2406,11 @@ public final class PaymentServiceOuterClass {
 
         balance_ = 0L;
 
-        expiredDate_ = "";
+        expiredDate_ = 0L;
 
-        recordedDate_ = "";
+        recordedDate_ = 0L;
 
-        lastModifiedDate_ = "";
+        lastModifiedDate_ = 0L;
 
         status_ = 0;
 
@@ -2607,17 +2508,14 @@ public final class PaymentServiceOuterClass {
         if (other.getBalance() != 0L) {
           setBalance(other.getBalance());
         }
-        if (!other.getExpiredDate().isEmpty()) {
-          expiredDate_ = other.expiredDate_;
-          onChanged();
+        if (other.getExpiredDate() != 0L) {
+          setExpiredDate(other.getExpiredDate());
         }
-        if (!other.getRecordedDate().isEmpty()) {
-          recordedDate_ = other.recordedDate_;
-          onChanged();
+        if (other.getRecordedDate() != 0L) {
+          setRecordedDate(other.getRecordedDate());
         }
-        if (!other.getLastModifiedDate().isEmpty()) {
-          lastModifiedDate_ = other.lastModifiedDate_;
-          onChanged();
+        if (other.getLastModifiedDate() != 0L) {
+          setLastModifiedDate(other.getLastModifiedDate());
         }
         if (other.status_ != 0) {
           setStatusValue(other.getStatusValue());
@@ -2775,230 +2673,95 @@ public final class PaymentServiceOuterClass {
         return this;
       }
 
-      private java.lang.Object expiredDate_ = "";
+      private long expiredDate_ ;
       /**
-       * <code>string expiredDate = 5;</code>
+       * <code>int64 expiredDate = 5;</code>
        * @return The expiredDate.
        */
-      public java.lang.String getExpiredDate() {
-        java.lang.Object ref = expiredDate_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          expiredDate_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
+      @java.lang.Override
+      public long getExpiredDate() {
+        return expiredDate_;
       }
       /**
-       * <code>string expiredDate = 5;</code>
-       * @return The bytes for expiredDate.
-       */
-      public com.google.protobuf.ByteString
-          getExpiredDateBytes() {
-        java.lang.Object ref = expiredDate_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          expiredDate_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string expiredDate = 5;</code>
+       * <code>int64 expiredDate = 5;</code>
        * @param value The expiredDate to set.
        * @return This builder for chaining.
        */
-      public Builder setExpiredDate(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      public Builder setExpiredDate(long value) {
+        
         expiredDate_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string expiredDate = 5;</code>
+       * <code>int64 expiredDate = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearExpiredDate() {
         
-        expiredDate_ = getDefaultInstance().getExpiredDate();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string expiredDate = 5;</code>
-       * @param value The bytes for expiredDate to set.
-       * @return This builder for chaining.
-       */
-      public Builder setExpiredDateBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        expiredDate_ = value;
+        expiredDate_ = 0L;
         onChanged();
         return this;
       }
 
-      private java.lang.Object recordedDate_ = "";
+      private long recordedDate_ ;
       /**
-       * <code>string recordedDate = 6;</code>
+       * <code>int64 recordedDate = 6;</code>
        * @return The recordedDate.
        */
-      public java.lang.String getRecordedDate() {
-        java.lang.Object ref = recordedDate_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          recordedDate_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
+      @java.lang.Override
+      public long getRecordedDate() {
+        return recordedDate_;
       }
       /**
-       * <code>string recordedDate = 6;</code>
-       * @return The bytes for recordedDate.
-       */
-      public com.google.protobuf.ByteString
-          getRecordedDateBytes() {
-        java.lang.Object ref = recordedDate_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          recordedDate_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string recordedDate = 6;</code>
+       * <code>int64 recordedDate = 6;</code>
        * @param value The recordedDate to set.
        * @return This builder for chaining.
        */
-      public Builder setRecordedDate(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      public Builder setRecordedDate(long value) {
+        
         recordedDate_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string recordedDate = 6;</code>
+       * <code>int64 recordedDate = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearRecordedDate() {
         
-        recordedDate_ = getDefaultInstance().getRecordedDate();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string recordedDate = 6;</code>
-       * @param value The bytes for recordedDate to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRecordedDateBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        recordedDate_ = value;
+        recordedDate_ = 0L;
         onChanged();
         return this;
       }
 
-      private java.lang.Object lastModifiedDate_ = "";
+      private long lastModifiedDate_ ;
       /**
-       * <code>string lastModifiedDate = 7;</code>
+       * <code>int64 lastModifiedDate = 7;</code>
        * @return The lastModifiedDate.
        */
-      public java.lang.String getLastModifiedDate() {
-        java.lang.Object ref = lastModifiedDate_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          lastModifiedDate_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
+      @java.lang.Override
+      public long getLastModifiedDate() {
+        return lastModifiedDate_;
       }
       /**
-       * <code>string lastModifiedDate = 7;</code>
-       * @return The bytes for lastModifiedDate.
-       */
-      public com.google.protobuf.ByteString
-          getLastModifiedDateBytes() {
-        java.lang.Object ref = lastModifiedDate_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          lastModifiedDate_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string lastModifiedDate = 7;</code>
+       * <code>int64 lastModifiedDate = 7;</code>
        * @param value The lastModifiedDate to set.
        * @return This builder for chaining.
        */
-      public Builder setLastModifiedDate(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
+      public Builder setLastModifiedDate(long value) {
+        
         lastModifiedDate_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string lastModifiedDate = 7;</code>
+       * <code>int64 lastModifiedDate = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearLastModifiedDate() {
         
-        lastModifiedDate_ = getDefaultInstance().getLastModifiedDate();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string lastModifiedDate = 7;</code>
-       * @param value The bytes for lastModifiedDate to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLastModifiedDateBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        lastModifiedDate_ = value;
+        lastModifiedDate_ = 0L;
         onChanged();
         return this;
       }
@@ -6046,33 +5809,33 @@ public final class PaymentServiceOuterClass {
       "\n\024PaymentService.proto\022\004grpc\"q\n\010Response" +
       "\022%\n\006result\030\001 \001(\0162\025.grpc.Response.Result\"" +
       ">\n\006Result\022\006\n\002OK\020\000\022\017\n\013BAD_REQUEST\020\001\022\r\n\tNO" +
-      "T_FOUND\020\002\022\014\n\010CONFLICT\020\003\"\316\001\n\013Transaction\022" +
+      "T_FOUND\020\002\022\014\n\010CONFLICT\020\003\"\317\001\n\013Transaction\022" +
       "\n\n\002id\030\001 \001(\003\022\021\n\taccountId\030\002 \001(\003\022$\n\004type\030\003" +
       " \001(\0162\026.grpc.Transaction.Type\022\016\n\006amount\030\004" +
-      " \001(\003\022\016\n\006balace\030\005 \001(\003\022\r\n\005label\030\006 \001(\003\022\024\n\014r" +
-      "ecordedDate\030\007 \001(\003\"5\n\004Type\022\020\n\014NOT_SELECTE" +
-      "D\020\000\022\013\n\007DEPOSIT\020\001\022\016\n\nWITHDRAWAL\020\002\"\350\001\n\007Hol" +
-      "ding\022\n\n\002id\030\001 \001(\003\022\021\n\taccountId\030\002 \001(\003\022\016\n\006a" +
-      "mount\030\003 \001(\003\022\017\n\007balance\030\004 \001(\003\022\023\n\013expiredD" +
-      "ate\030\005 \001(\t\022\024\n\014recordedDate\030\006 \001(\t\022\030\n\020lastM" +
-      "odifiedDate\030\007 \001(\t\022$\n\006status\030\010 \001(\0162\024.grpc" +
-      ".Holding.Status\"2\n\006Status\022\020\n\014NOT_SELECTE" +
-      "D\020\000\022\n\n\006HOLDED\020\001\022\n\n\006CLOSED\020\002\"<\n\022Transacti" +
-      "onRequest\022&\n\013transaction\030\001 \001(\0132\021.grpc.Tr" +
-      "ansaction\"]\n\023TransactionResponse\022\036\n\006resu" +
-      "lt\030\001 \001(\0132\016.grpc.Response\022&\n\013transaction\030" +
-      "\002 \001(\0132\021.grpc.Transaction\"0\n\016HoldingReque" +
-      "st\022\036\n\007holding\030\001 \001(\0132\r.grpc.Holding\"Q\n\017Ho" +
-      "ldingResponse\022\036\n\006result\030\001 \001(\0132\016.grpc.Res" +
-      "ponse\022\036\n\007holding\030\002 \001(\0132\r.grpc.Holding2\200\002" +
-      "\n\016PaymentService\022@\n\tdoPayment\022\030.grpc.Tra" +
-      "nsactionRequest\032\031.grpc.TransactionRespon" +
-      "se\0228\n\tdoHolding\022\024.grpc.HoldingRequest\032\025." +
-      "grpc.HoldingResponse\022<\n\rextendHolding\022\024." +
-      "grpc.HoldingRequest\032\025.grpc.HoldingRespon" +
-      "se\0224\n\014clearHolding\022\024.grpc.HoldingRequest" +
-      "\032\016.grpc.ResponseB2\n\026com.choulatte.pay.gr" +
-      "pcB\030PaymentServiceOuterClassb\006proto3"
+      " \001(\003\022\017\n\007balance\030\005 \001(\003\022\r\n\005label\030\006 \001(\003\022\024\n\014" +
+      "recordedDate\030\007 \001(\003\"5\n\004Type\022\020\n\014NOT_SELECT" +
+      "ED\020\000\022\013\n\007DEPOSIT\020\001\022\016\n\nWITHDRAWAL\020\002\"\350\001\n\007Ho" +
+      "lding\022\n\n\002id\030\001 \001(\003\022\021\n\taccountId\030\002 \001(\003\022\016\n\006" +
+      "amount\030\003 \001(\003\022\017\n\007balance\030\004 \001(\003\022\023\n\013expired" +
+      "Date\030\005 \001(\003\022\024\n\014recordedDate\030\006 \001(\003\022\030\n\020last" +
+      "ModifiedDate\030\007 \001(\003\022$\n\006status\030\010 \001(\0162\024.grp" +
+      "c.Holding.Status\"2\n\006Status\022\020\n\014NOT_SELECT" +
+      "ED\020\000\022\n\n\006HOLDED\020\001\022\n\n\006CLOSED\020\002\"<\n\022Transact" +
+      "ionRequest\022&\n\013transaction\030\001 \001(\0132\021.grpc.T" +
+      "ransaction\"]\n\023TransactionResponse\022\036\n\006res" +
+      "ult\030\001 \001(\0132\016.grpc.Response\022&\n\013transaction" +
+      "\030\002 \001(\0132\021.grpc.Transaction\"0\n\016HoldingRequ" +
+      "est\022\036\n\007holding\030\001 \001(\0132\r.grpc.Holding\"Q\n\017H" +
+      "oldingResponse\022\036\n\006result\030\001 \001(\0132\016.grpc.Re" +
+      "sponse\022\036\n\007holding\030\002 \001(\0132\r.grpc.Holding2\200" +
+      "\002\n\016PaymentService\022@\n\tdoPayment\022\030.grpc.Tr" +
+      "ansactionRequest\032\031.grpc.TransactionRespo" +
+      "nse\0228\n\tdoHolding\022\024.grpc.HoldingRequest\032\025" +
+      ".grpc.HoldingResponse\022<\n\rextendHolding\022\024" +
+      ".grpc.HoldingRequest\032\025.grpc.HoldingRespo" +
+      "nse\0224\n\014clearHolding\022\024.grpc.HoldingReques" +
+      "t\032\016.grpc.ResponseB2\n\026com.choulatte.pay.g" +
+      "rpcB\030PaymentServiceOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -6089,7 +5852,7 @@ public final class PaymentServiceOuterClass {
     internal_static_grpc_Transaction_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_grpc_Transaction_descriptor,
-        new java.lang.String[] { "Id", "AccountId", "Type", "Amount", "Balace", "Label", "RecordedDate", });
+        new java.lang.String[] { "Id", "AccountId", "Type", "Amount", "Balance", "Label", "RecordedDate", });
     internal_static_grpc_Holding_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_grpc_Holding_fieldAccessorTable = new

@@ -32,7 +32,7 @@ message Transaction {
   }
   Type type = 3;
   int64 amount = 4;
-  int64 balace = 5;
+  int64 balance = 5;
   int64 label = 6;
   int64 recordedDate = 7;
 }
@@ -42,9 +42,9 @@ message Holding {
   int64 accountId = 2;
   int64 amount = 3;
   int64 balance = 4;
-  string expiredDate = 5;
-  string recordedDate = 6;
-  string lastModifiedDate = 7;
+  int64 expiredDate = 5;
+  int64 recordedDate = 6;
+  int64 lastModifiedDate = 7;
 
   enum Status {
     NOT_SELECTED = 0;
