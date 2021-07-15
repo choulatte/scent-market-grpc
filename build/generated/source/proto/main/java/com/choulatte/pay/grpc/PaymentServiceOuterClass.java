@@ -705,10 +705,16 @@ public final class PaymentServiceOuterClass {
     long getBalance();
 
     /**
-     * <code>int64 label = 6;</code>
+     * <code>string label = 6;</code>
      * @return The label.
      */
-    long getLabel();
+    java.lang.String getLabel();
+    /**
+     * <code>string label = 6;</code>
+     * @return The bytes for label.
+     */
+    com.google.protobuf.ByteString
+        getLabelBytes();
 
     /**
      * <code>int64 recordedDate = 7;</code>
@@ -730,6 +736,7 @@ public final class PaymentServiceOuterClass {
     }
     private Transaction() {
       type_ = 0;
+      label_ = "";
     }
 
     @java.lang.Override
@@ -788,9 +795,10 @@ public final class PaymentServiceOuterClass {
               balance_ = input.readInt64();
               break;
             }
-            case 48: {
+            case 50: {
+              java.lang.String s = input.readStringRequireUtf8();
 
-              label_ = input.readInt64();
+              label_ = s;
               break;
             }
             case 56: {
@@ -1011,14 +1019,41 @@ public final class PaymentServiceOuterClass {
     }
 
     public static final int LABEL_FIELD_NUMBER = 6;
-    private long label_;
+    private volatile java.lang.Object label_;
     /**
-     * <code>int64 label = 6;</code>
+     * <code>string label = 6;</code>
      * @return The label.
      */
     @java.lang.Override
-    public long getLabel() {
-      return label_;
+    public java.lang.String getLabel() {
+      java.lang.Object ref = label_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        label_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string label = 6;</code>
+     * @return The bytes for label.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getLabelBytes() {
+      java.lang.Object ref = label_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        label_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
     }
 
     public static final int RECORDEDDATE_FIELD_NUMBER = 7;
@@ -1061,8 +1096,8 @@ public final class PaymentServiceOuterClass {
       if (balance_ != 0L) {
         output.writeInt64(5, balance_);
       }
-      if (label_ != 0L) {
-        output.writeInt64(6, label_);
+      if (!getLabelBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, label_);
       }
       if (recordedDate_ != 0L) {
         output.writeInt64(7, recordedDate_);
@@ -1096,9 +1131,8 @@ public final class PaymentServiceOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeInt64Size(5, balance_);
       }
-      if (label_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(6, label_);
+      if (!getLabelBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, label_);
       }
       if (recordedDate_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
@@ -1128,8 +1162,8 @@ public final class PaymentServiceOuterClass {
           != other.getAmount()) return false;
       if (getBalance()
           != other.getBalance()) return false;
-      if (getLabel()
-          != other.getLabel()) return false;
+      if (!getLabel()
+          .equals(other.getLabel())) return false;
       if (getRecordedDate()
           != other.getRecordedDate()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -1158,8 +1192,7 @@ public final class PaymentServiceOuterClass {
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getBalance());
       hash = (37 * hash) + LABEL_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getLabel());
+      hash = (53 * hash) + getLabel().hashCode();
       hash = (37 * hash) + RECORDEDDATE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getRecordedDate());
@@ -1306,7 +1339,7 @@ public final class PaymentServiceOuterClass {
 
         balance_ = 0L;
 
-        label_ = 0L;
+        label_ = "";
 
         recordedDate_ = 0L;
 
@@ -1406,8 +1439,9 @@ public final class PaymentServiceOuterClass {
         if (other.getBalance() != 0L) {
           setBalance(other.getBalance());
         }
-        if (other.getLabel() != 0L) {
-          setLabel(other.getLabel());
+        if (!other.getLabel().isEmpty()) {
+          label_ = other.label_;
+          onChanged();
         }
         if (other.getRecordedDate() != 0L) {
           setRecordedDate(other.getRecordedDate());
@@ -1619,33 +1653,78 @@ public final class PaymentServiceOuterClass {
         return this;
       }
 
-      private long label_ ;
+      private java.lang.Object label_ = "";
       /**
-       * <code>int64 label = 6;</code>
+       * <code>string label = 6;</code>
        * @return The label.
        */
-      @java.lang.Override
-      public long getLabel() {
-        return label_;
+      public java.lang.String getLabel() {
+        java.lang.Object ref = label_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          label_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
       }
       /**
-       * <code>int64 label = 6;</code>
+       * <code>string label = 6;</code>
+       * @return The bytes for label.
+       */
+      public com.google.protobuf.ByteString
+          getLabelBytes() {
+        java.lang.Object ref = label_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          label_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string label = 6;</code>
        * @param value The label to set.
        * @return This builder for chaining.
        */
-      public Builder setLabel(long value) {
-        
+      public Builder setLabel(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
         label_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int64 label = 6;</code>
+       * <code>string label = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearLabel() {
         
-        label_ = 0L;
+        label_ = getDefaultInstance().getLabel();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string label = 6;</code>
+       * @param value The bytes for label to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLabelBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        label_ = value;
         onChanged();
         return this;
       }
@@ -5812,7 +5891,7 @@ public final class PaymentServiceOuterClass {
       "T_FOUND\020\002\022\014\n\010CONFLICT\020\003\"\317\001\n\013Transaction\022" +
       "\n\n\002id\030\001 \001(\003\022\021\n\taccountId\030\002 \001(\003\022$\n\004type\030\003" +
       " \001(\0162\026.grpc.Transaction.Type\022\016\n\006amount\030\004" +
-      " \001(\003\022\017\n\007balance\030\005 \001(\003\022\r\n\005label\030\006 \001(\003\022\024\n\014" +
+      " \001(\003\022\017\n\007balance\030\005 \001(\003\022\r\n\005label\030\006 \001(\t\022\024\n\014" +
       "recordedDate\030\007 \001(\003\"5\n\004Type\022\020\n\014NOT_SELECT" +
       "ED\020\000\022\013\n\007DEPOSIT\020\001\022\016\n\nWITHDRAWAL\020\002\"\350\001\n\007Ho" +
       "lding\022\n\n\002id\030\001 \001(\003\022\021\n\taccountId\030\002 \001(\003\022\016\n\006" +
