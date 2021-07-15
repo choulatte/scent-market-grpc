@@ -33,7 +33,7 @@ message Transaction {
   Type type = 3;
   int64 amount = 4;
   int64 balance = 5;
-  int64 label = 6;
+  string label = 6;
   int64 recordedDate = 7;
 }
 
