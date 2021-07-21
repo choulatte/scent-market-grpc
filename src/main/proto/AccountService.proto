@@ -5,20 +5,20 @@ option java_package = "com.choulatte.pay.grpc";
 option java_outer_classname = "AccountServiceOuterClass";
 
 service AccountService {
-  rpc doUserAccountsPending(UserPendingRequest) returns (UserPendingResponse);
-  rpc doUserAccountsInvalidating(UserInvalidatingRequest) returns (UserInvalidatingResponse);
+  rpc doUserAccountsPending(AccountsPendingRequest) returns (AccountsPendingResponse);
+  rpc doUserAccountsInvalidating(AccountsInvalidatingRequest) returns (AccountsInvalidatingResponse);
 }
 
-message UserPendingRequest {
+message AccountsPendingRequest {
   int64 userId = 1;
 }
 
-message UserInvalidatingRequest {
+message AccountsInvalidatingRequest {
   int64 userId = 1;
   repeated int64 accountId = 2;
 }
 
-message UserPendingResponse {
+message AccountsPendingResponse {
   enum Result {
     OK = 0;
     CONFLICT = 1;
@@ -27,7 +27,7 @@ message UserPendingResponse {
   repeated int64 accountId = 2;
 }
 
-message UserInvalidatingResponse {
+message AccountsInvalidatingResponse {
   enum Result {
     OK = 0;
     CONFLICT = 1;
