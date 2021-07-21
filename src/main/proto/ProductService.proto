@@ -1,0 +1,36 @@
+syntax = "proto3";
+package grpc;
+
+option java_package = "com.choulatte.product.grpc";
+option java_outer_classname = "ProductServiceOuterClass";
+
+service ProductService {
+  rpc doUserProductsPending(ProductsPendingRequest) returns (ProductsPendingResponse);
+  rpc doUserProductsInvalidating(ProductsInvalidatingRequest) returns (ProductsInvalidatingResponse);
+}
+
+message ProductsPendingRequest {
+  int64 userId = 1;
+}
+
+message ProductsInvalidatingRequest {
+  int64 userId = 1;
+  repeated int64 productId = 2;
+}
+
+message ProductsPendingResponse {
+  enum Result {
+    OK = 0;
+    CONFLICT = 1;
+  }
+  Result result = 1;
+  repeated int64 productId = 2;
+}
+
+message ProductsInvalidatingResponse {
+  enum Result {
+    OK = 0;
+    CONFLICT = 1;
+  }
+  Result result = 1;
+}

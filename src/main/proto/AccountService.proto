@@ -1,0 +1,36 @@
+syntax = "proto3";
+package grpc;
+
+option java_package = "com.choulatte.pay.grpc";
+option java_outer_classname = "AccountServiceOuterClass";
+
+service AccountService {
+  rpc doUserAccountsPending(UserPendingRequest) returns (UserPendingResponse);
+  rpc doUserAccountsInvalidating(UserInvalidatingRequest) returns (UserInvalidatingResponse);
+}
+
+message UserPendingRequest {
+  int64 userId = 1;
+}
+
+message UserInvalidatingRequest {
+  int64 userId = 1;
+  repeated int64 accountId = 2;
+}
+
+message UserPendingResponse {
+  enum Result {
+    OK = 0;
+    CONFLICT = 1;
+  }
+  Result result = 1;
+  repeated int64 accountId = 2;
+}
+
+message UserInvalidatingResponse {
+  enum Result {
+    OK = 0;
+    CONFLICT = 1;
+  }
+  Result result = 1;
+}
