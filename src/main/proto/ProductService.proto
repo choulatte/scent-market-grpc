@@ -6,6 +6,7 @@ option java_outer_classname = "ProductServiceOuterClass";
 
 service ProductService {
   rpc doUserProductsPending(ProductsPendingRequest) returns (ProductsPendingResponse);
+  rpc undoUserProductsPending(ProductsPendingRequest) returns (ProductsPendingResponse);
   rpc doUserProductsInvalidating(ProductsInvalidatingRequest) returns (ProductsInvalidatingResponse);
 }
 

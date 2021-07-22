@@ -6,6 +6,7 @@ option java_outer_classname = "AccountServiceOuterClass";
 
 service AccountService {
   rpc doUserAccountsPending(AccountsPendingRequest) returns (AccountsPendingResponse);
+  rpc undoUserAccountsPending(AccountsPendingRequest) returns (AccountsPendingResponse);
   rpc doUserAccountsInvalidating(AccountsInvalidatingRequest) returns (AccountsInvalidatingResponse);
 }
 

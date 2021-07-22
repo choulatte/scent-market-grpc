@@ -2690,14 +2690,16 @@ public final class ProductServiceOuterClass {
       "\006Result\022\006\n\002OK\020\000\022\014\n\010CONFLICT\020\001\"y\n\034Product" +
       "sInvalidatingResponse\0229\n\006result\030\001 \001(\0162)." +
       "grpc.ProductsInvalidatingResponse.Result" +
-      "\"\036\n\006Result\022\006\n\002OK\020\000\022\014\n\010CONFLICT\020\0012\313\001\n\016Pro" +
+      "\"\036\n\006Result\022\006\n\002OK\020\000\022\014\n\010CONFLICT\020\0012\243\002\n\016Pro" +
       "ductService\022T\n\025doUserProductsPending\022\034.g" +
       "rpc.ProductsPendingRequest\032\035.grpc.Produc" +
-      "tsPendingResponse\022c\n\032doUserProductsInval" +
-      "idating\022!.grpc.ProductsInvalidatingReque" +
-      "st\032\".grpc.ProductsInvalidatingResponseB6" +
-      "\n\032com.choulatte.product.grpcB\030ProductSer" +
-      "viceOuterClassb\006proto3"
+      "tsPendingResponse\022V\n\027undoUserProductsPen" +
+      "ding\022\034.grpc.ProductsPendingRequest\032\035.grp" +
+      "c.ProductsPendingResponse\022c\n\032doUserProdu" +
+      "ctsInvalidating\022!.grpc.ProductsInvalidat" +
+      "ingRequest\032\".grpc.ProductsInvalidatingRe" +
+      "sponseB6\n\032com.choulatte.product.grpcB\030Pr" +
+      "oductServiceOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

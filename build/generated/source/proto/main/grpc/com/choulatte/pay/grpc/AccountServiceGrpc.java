@@ -45,6 +45,37 @@ public final class AccountServiceGrpc {
     return getDoUserAccountsPendingMethod;
   }
 
+  private static volatile io.grpc.MethodDescriptor<com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingRequest,
+      com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingResponse> getUndoUserAccountsPendingMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "undoUserAccountsPending",
+      requestType = com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingRequest.class,
+      responseType = com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingRequest,
+      com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingResponse> getUndoUserAccountsPendingMethod() {
+    io.grpc.MethodDescriptor<com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingRequest, com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingResponse> getUndoUserAccountsPendingMethod;
+    if ((getUndoUserAccountsPendingMethod = AccountServiceGrpc.getUndoUserAccountsPendingMethod) == null) {
+      synchronized (AccountServiceGrpc.class) {
+        if ((getUndoUserAccountsPendingMethod = AccountServiceGrpc.getUndoUserAccountsPendingMethod) == null) {
+          AccountServiceGrpc.getUndoUserAccountsPendingMethod = getUndoUserAccountsPendingMethod =
+              io.grpc.MethodDescriptor.<com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingRequest, com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "undoUserAccountsPending"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new AccountServiceMethodDescriptorSupplier("undoUserAccountsPending"))
+              .build();
+        }
+      }
+    }
+    return getUndoUserAccountsPendingMethod;
+  }
+
   private static volatile io.grpc.MethodDescriptor<com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsInvalidatingRequest,
       com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsInvalidatingResponse> getDoUserAccountsInvalidatingMethod;
 
@@ -133,6 +164,13 @@ public final class AccountServiceGrpc {
 
     /**
      */
+    public void undoUserAccountsPending(com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingRequest request,
+        io.grpc.stub.StreamObserver<com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getUndoUserAccountsPendingMethod(), responseObserver);
+    }
+
+    /**
+     */
     public void doUserAccountsInvalidating(com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsInvalidatingRequest request,
         io.grpc.stub.StreamObserver<com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsInvalidatingResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getDoUserAccountsInvalidatingMethod(), responseObserver);
@@ -147,6 +185,13 @@ public final class AccountServiceGrpc {
                 com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingRequest,
                 com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingResponse>(
                   this, METHODID_DO_USER_ACCOUNTS_PENDING)))
+          .addMethod(
+            getUndoUserAccountsPendingMethod(),
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
+              new MethodHandlers<
+                com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingRequest,
+                com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingResponse>(
+                  this, METHODID_UNDO_USER_ACCOUNTS_PENDING)))
           .addMethod(
             getDoUserAccountsInvalidatingMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
@@ -182,6 +227,14 @@ public final class AccountServiceGrpc {
 
     /**
      */
+    public void undoUserAccountsPending(com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingRequest request,
+        io.grpc.stub.StreamObserver<com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingResponse> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getUndoUserAccountsPendingMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     */
     public void doUserAccountsInvalidating(com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsInvalidatingRequest request,
         io.grpc.stub.StreamObserver<com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsInvalidatingResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
@@ -208,6 +261,13 @@ public final class AccountServiceGrpc {
     public com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingResponse doUserAccountsPending(com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getDoUserAccountsPendingMethod(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingResponse undoUserAccountsPending(com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingRequest request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getUndoUserAccountsPendingMethod(), getCallOptions(), request);
     }
 
     /**
@@ -242,6 +302,14 @@ public final class AccountServiceGrpc {
 
     /**
      */
+    public com.google.common.util.concurrent.ListenableFuture<com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingResponse> undoUserAccountsPending(
+        com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingRequest request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getUndoUserAccountsPendingMethod(), getCallOptions()), request);
+    }
+
+    /**
+     */
     public com.google.common.util.concurrent.ListenableFuture<com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsInvalidatingResponse> doUserAccountsInvalidating(
         com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsInvalidatingRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
@@ -250,7 +318,8 @@ public final class AccountServiceGrpc {
   }
 
   private static final int METHODID_DO_USER_ACCOUNTS_PENDING = 0;
-  private static final int METHODID_DO_USER_ACCOUNTS_INVALIDATING = 1;
+  private static final int METHODID_UNDO_USER_ACCOUNTS_PENDING = 1;
+  private static final int METHODID_DO_USER_ACCOUNTS_INVALIDATING = 2;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -271,6 +340,10 @@ public final class AccountServiceGrpc {
       switch (methodId) {
         case METHODID_DO_USER_ACCOUNTS_PENDING:
           serviceImpl.doUserAccountsPending((com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingRequest) request,
+              (io.grpc.stub.StreamObserver<com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingResponse>) responseObserver);
+          break;
+        case METHODID_UNDO_USER_ACCOUNTS_PENDING:
+          serviceImpl.undoUserAccountsPending((com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingRequest) request,
               (io.grpc.stub.StreamObserver<com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingResponse>) responseObserver);
           break;
         case METHODID_DO_USER_ACCOUNTS_INVALIDATING:
@@ -339,6 +412,7 @@ public final class AccountServiceGrpc {
           serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
               .setSchemaDescriptor(new AccountServiceFileDescriptorSupplier())
               .addMethod(getDoUserAccountsPendingMethod())
+              .addMethod(getUndoUserAccountsPendingMethod())
               .addMethod(getDoUserAccountsInvalidatingMethod())
               .build();
         }

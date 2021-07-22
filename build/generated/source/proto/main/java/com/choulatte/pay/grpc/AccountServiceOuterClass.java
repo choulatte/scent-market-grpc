@@ -2690,14 +2690,16 @@ public final class AccountServiceOuterClass {
       "\006Result\022\006\n\002OK\020\000\022\014\n\010CONFLICT\020\001\"y\n\034Account" +
       "sInvalidatingResponse\0229\n\006result\030\001 \001(\0162)." +
       "grpc.AccountsInvalidatingResponse.Result" +
-      "\"\036\n\006Result\022\006\n\002OK\020\000\022\014\n\010CONFLICT\020\0012\313\001\n\016Acc" +
+      "\"\036\n\006Result\022\006\n\002OK\020\000\022\014\n\010CONFLICT\020\0012\243\002\n\016Acc" +
       "ountService\022T\n\025doUserAccountsPending\022\034.g" +
       "rpc.AccountsPendingRequest\032\035.grpc.Accoun" +
-      "tsPendingResponse\022c\n\032doUserAccountsInval" +
-      "idating\022!.grpc.AccountsInvalidatingReque" +
-      "st\032\".grpc.AccountsInvalidatingResponseB2" +
-      "\n\026com.choulatte.pay.grpcB\030AccountService" +
-      "OuterClassb\006proto3"
+      "tsPendingResponse\022V\n\027undoUserAccountsPen" +
+      "ding\022\034.grpc.AccountsPendingRequest\032\035.grp" +
+      "c.AccountsPendingResponse\022c\n\032doUserAccou" +
+      "ntsInvalidating\022!.grpc.AccountsInvalidat" +
+      "ingRequest\032\".grpc.AccountsInvalidatingRe" +
+      "sponseB2\n\026com.choulatte.pay.grpcB\030Accoun" +
+      "tServiceOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
