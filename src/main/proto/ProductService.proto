@@ -1,7 +1,7 @@
 syntax = "proto3";
 package grpc;
 
-option java_package = "com.choulatte.product.grpc";
+option java_package = "com.choulatte.scentproduct.grpc";
 option java_outer_classname = "ProductServiceOuterClass";
 
 service ProductService {

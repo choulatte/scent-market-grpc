@@ -1,4 +1,4 @@
-package com.choulatte.pay.grpc;
+package com.choulatte.scentpay.grpc;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 
@@ -14,29 +14,29 @@ public final class PaymentServiceGrpc {
   public static final String SERVICE_NAME = "grpc.PaymentService";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<com.choulatte.pay.grpc.PaymentServiceOuterClass.TransactionRequest,
-      com.choulatte.pay.grpc.PaymentServiceOuterClass.TransactionResponse> getDoPaymentMethod;
+  private static volatile io.grpc.MethodDescriptor<com.choulatte.scentpay.grpc.PaymentServiceOuterClass.TransactionRequest,
+      com.choulatte.scentpay.grpc.PaymentServiceOuterClass.TransactionResponse> getDoPaymentMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "doPayment",
-      requestType = com.choulatte.pay.grpc.PaymentServiceOuterClass.TransactionRequest.class,
-      responseType = com.choulatte.pay.grpc.PaymentServiceOuterClass.TransactionResponse.class,
+      requestType = com.choulatte.scentpay.grpc.PaymentServiceOuterClass.TransactionRequest.class,
+      responseType = com.choulatte.scentpay.grpc.PaymentServiceOuterClass.TransactionResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<com.choulatte.pay.grpc.PaymentServiceOuterClass.TransactionRequest,
-      com.choulatte.pay.grpc.PaymentServiceOuterClass.TransactionResponse> getDoPaymentMethod() {
-    io.grpc.MethodDescriptor<com.choulatte.pay.grpc.PaymentServiceOuterClass.TransactionRequest, com.choulatte.pay.grpc.PaymentServiceOuterClass.TransactionResponse> getDoPaymentMethod;
+  public static io.grpc.MethodDescriptor<com.choulatte.scentpay.grpc.PaymentServiceOuterClass.TransactionRequest,
+      com.choulatte.scentpay.grpc.PaymentServiceOuterClass.TransactionResponse> getDoPaymentMethod() {
+    io.grpc.MethodDescriptor<com.choulatte.scentpay.grpc.PaymentServiceOuterClass.TransactionRequest, com.choulatte.scentpay.grpc.PaymentServiceOuterClass.TransactionResponse> getDoPaymentMethod;
     if ((getDoPaymentMethod = PaymentServiceGrpc.getDoPaymentMethod) == null) {
       synchronized (PaymentServiceGrpc.class) {
         if ((getDoPaymentMethod = PaymentServiceGrpc.getDoPaymentMethod) == null) {
           PaymentServiceGrpc.getDoPaymentMethod = getDoPaymentMethod =
-              io.grpc.MethodDescriptor.<com.choulatte.pay.grpc.PaymentServiceOuterClass.TransactionRequest, com.choulatte.pay.grpc.PaymentServiceOuterClass.TransactionResponse>newBuilder()
+              io.grpc.MethodDescriptor.<com.choulatte.scentpay.grpc.PaymentServiceOuterClass.TransactionRequest, com.choulatte.scentpay.grpc.PaymentServiceOuterClass.TransactionResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "doPayment"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.choulatte.pay.grpc.PaymentServiceOuterClass.TransactionRequest.getDefaultInstance()))
+                  com.choulatte.scentpay.grpc.PaymentServiceOuterClass.TransactionRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.choulatte.pay.grpc.PaymentServiceOuterClass.TransactionResponse.getDefaultInstance()))
+                  com.choulatte.scentpay.grpc.PaymentServiceOuterClass.TransactionResponse.getDefaultInstance()))
               .setSchemaDescriptor(new PaymentServiceMethodDescriptorSupplier("doPayment"))
               .build();
         }
@@ -45,29 +45,29 @@ public final class PaymentServiceGrpc {
     return getDoPaymentMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingRequest,
-      com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingResponse> getDoHoldingMethod;
+  private static volatile io.grpc.MethodDescriptor<com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingRequest,
+      com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingResponse> getDoHoldingMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "doHolding",
-      requestType = com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingRequest.class,
-      responseType = com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingResponse.class,
+      requestType = com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingRequest.class,
+      responseType = com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingRequest,
-      com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingResponse> getDoHoldingMethod() {
-    io.grpc.MethodDescriptor<com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingRequest, com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingResponse> getDoHoldingMethod;
+  public static io.grpc.MethodDescriptor<com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingRequest,
+      com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingResponse> getDoHoldingMethod() {
+    io.grpc.MethodDescriptor<com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingRequest, com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingResponse> getDoHoldingMethod;
     if ((getDoHoldingMethod = PaymentServiceGrpc.getDoHoldingMethod) == null) {
       synchronized (PaymentServiceGrpc.class) {
         if ((getDoHoldingMethod = PaymentServiceGrpc.getDoHoldingMethod) == null) {
           PaymentServiceGrpc.getDoHoldingMethod = getDoHoldingMethod =
-              io.grpc.MethodDescriptor.<com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingRequest, com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingResponse>newBuilder()
+              io.grpc.MethodDescriptor.<com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingRequest, com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "doHolding"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingRequest.getDefaultInstance()))
+                  com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingResponse.getDefaultInstance()))
+                  com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingResponse.getDefaultInstance()))
               .setSchemaDescriptor(new PaymentServiceMethodDescriptorSupplier("doHolding"))
               .build();
         }
@@ -76,29 +76,29 @@ public final class PaymentServiceGrpc {
     return getDoHoldingMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingRequest,
-      com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingResponse> getExtendHoldingMethod;
+  private static volatile io.grpc.MethodDescriptor<com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingRequest,
+      com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingResponse> getExtendHoldingMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "extendHolding",
-      requestType = com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingRequest.class,
-      responseType = com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingResponse.class,
+      requestType = com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingRequest.class,
+      responseType = com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingRequest,
-      com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingResponse> getExtendHoldingMethod() {
-    io.grpc.MethodDescriptor<com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingRequest, com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingResponse> getExtendHoldingMethod;
+  public static io.grpc.MethodDescriptor<com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingRequest,
+      com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingResponse> getExtendHoldingMethod() {
+    io.grpc.MethodDescriptor<com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingRequest, com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingResponse> getExtendHoldingMethod;
     if ((getExtendHoldingMethod = PaymentServiceGrpc.getExtendHoldingMethod) == null) {
       synchronized (PaymentServiceGrpc.class) {
         if ((getExtendHoldingMethod = PaymentServiceGrpc.getExtendHoldingMethod) == null) {
           PaymentServiceGrpc.getExtendHoldingMethod = getExtendHoldingMethod =
-              io.grpc.MethodDescriptor.<com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingRequest, com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingResponse>newBuilder()
+              io.grpc.MethodDescriptor.<com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingRequest, com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "extendHolding"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingRequest.getDefaultInstance()))
+                  com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingResponse.getDefaultInstance()))
+                  com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingResponse.getDefaultInstance()))
               .setSchemaDescriptor(new PaymentServiceMethodDescriptorSupplier("extendHolding"))
               .build();
         }
@@ -107,29 +107,29 @@ public final class PaymentServiceGrpc {
     return getExtendHoldingMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingRequest,
-      com.choulatte.pay.grpc.PaymentServiceOuterClass.Response> getClearHoldingMethod;
+  private static volatile io.grpc.MethodDescriptor<com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingRequest,
+      com.choulatte.scentpay.grpc.PaymentServiceOuterClass.Response> getClearHoldingMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "clearHolding",
-      requestType = com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingRequest.class,
-      responseType = com.choulatte.pay.grpc.PaymentServiceOuterClass.Response.class,
+      requestType = com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingRequest.class,
+      responseType = com.choulatte.scentpay.grpc.PaymentServiceOuterClass.Response.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingRequest,
-      com.choulatte.pay.grpc.PaymentServiceOuterClass.Response> getClearHoldingMethod() {
-    io.grpc.MethodDescriptor<com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingRequest, com.choulatte.pay.grpc.PaymentServiceOuterClass.Response> getClearHoldingMethod;
+  public static io.grpc.MethodDescriptor<com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingRequest,
+      com.choulatte.scentpay.grpc.PaymentServiceOuterClass.Response> getClearHoldingMethod() {
+    io.grpc.MethodDescriptor<com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingRequest, com.choulatte.scentpay.grpc.PaymentServiceOuterClass.Response> getClearHoldingMethod;
     if ((getClearHoldingMethod = PaymentServiceGrpc.getClearHoldingMethod) == null) {
       synchronized (PaymentServiceGrpc.class) {
         if ((getClearHoldingMethod = PaymentServiceGrpc.getClearHoldingMethod) == null) {
           PaymentServiceGrpc.getClearHoldingMethod = getClearHoldingMethod =
-              io.grpc.MethodDescriptor.<com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingRequest, com.choulatte.pay.grpc.PaymentServiceOuterClass.Response>newBuilder()
+              io.grpc.MethodDescriptor.<com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingRequest, com.choulatte.scentpay.grpc.PaymentServiceOuterClass.Response>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "clearHolding"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingRequest.getDefaultInstance()))
+                  com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.choulatte.pay.grpc.PaymentServiceOuterClass.Response.getDefaultInstance()))
+                  com.choulatte.scentpay.grpc.PaymentServiceOuterClass.Response.getDefaultInstance()))
               .setSchemaDescriptor(new PaymentServiceMethodDescriptorSupplier("clearHolding"))
               .build();
         }
@@ -188,29 +188,29 @@ public final class PaymentServiceGrpc {
 
     /**
      */
-    public void doPayment(com.choulatte.pay.grpc.PaymentServiceOuterClass.TransactionRequest request,
-        io.grpc.stub.StreamObserver<com.choulatte.pay.grpc.PaymentServiceOuterClass.TransactionResponse> responseObserver) {
+    public void doPayment(com.choulatte.scentpay.grpc.PaymentServiceOuterClass.TransactionRequest request,
+        io.grpc.stub.StreamObserver<com.choulatte.scentpay.grpc.PaymentServiceOuterClass.TransactionResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getDoPaymentMethod(), responseObserver);
     }
 
     /**
      */
-    public void doHolding(com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingRequest request,
-        io.grpc.stub.StreamObserver<com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingResponse> responseObserver) {
+    public void doHolding(com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingRequest request,
+        io.grpc.stub.StreamObserver<com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getDoHoldingMethod(), responseObserver);
     }
 
     /**
      */
-    public void extendHolding(com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingRequest request,
-        io.grpc.stub.StreamObserver<com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingResponse> responseObserver) {
+    public void extendHolding(com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingRequest request,
+        io.grpc.stub.StreamObserver<com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getExtendHoldingMethod(), responseObserver);
     }
 
     /**
      */
-    public void clearHolding(com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingRequest request,
-        io.grpc.stub.StreamObserver<com.choulatte.pay.grpc.PaymentServiceOuterClass.Response> responseObserver) {
+    public void clearHolding(com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingRequest request,
+        io.grpc.stub.StreamObserver<com.choulatte.scentpay.grpc.PaymentServiceOuterClass.Response> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getClearHoldingMethod(), responseObserver);
     }
 
@@ -220,29 +220,29 @@ public final class PaymentServiceGrpc {
             getDoPaymentMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                com.choulatte.pay.grpc.PaymentServiceOuterClass.TransactionRequest,
-                com.choulatte.pay.grpc.PaymentServiceOuterClass.TransactionResponse>(
+                com.choulatte.scentpay.grpc.PaymentServiceOuterClass.TransactionRequest,
+                com.choulatte.scentpay.grpc.PaymentServiceOuterClass.TransactionResponse>(
                   this, METHODID_DO_PAYMENT)))
           .addMethod(
             getDoHoldingMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingRequest,
-                com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingResponse>(
+                com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingRequest,
+                com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingResponse>(
                   this, METHODID_DO_HOLDING)))
           .addMethod(
             getExtendHoldingMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingRequest,
-                com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingResponse>(
+                com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingRequest,
+                com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingResponse>(
                   this, METHODID_EXTEND_HOLDING)))
           .addMethod(
             getClearHoldingMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingRequest,
-                com.choulatte.pay.grpc.PaymentServiceOuterClass.Response>(
+                com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingRequest,
+                com.choulatte.scentpay.grpc.PaymentServiceOuterClass.Response>(
                   this, METHODID_CLEAR_HOLDING)))
           .build();
     }
@@ -264,32 +264,32 @@ public final class PaymentServiceGrpc {
 
     /**
      */
-    public void doPayment(com.choulatte.pay.grpc.PaymentServiceOuterClass.TransactionRequest request,
-        io.grpc.stub.StreamObserver<com.choulatte.pay.grpc.PaymentServiceOuterClass.TransactionResponse> responseObserver) {
+    public void doPayment(com.choulatte.scentpay.grpc.PaymentServiceOuterClass.TransactionRequest request,
+        io.grpc.stub.StreamObserver<com.choulatte.scentpay.grpc.PaymentServiceOuterClass.TransactionResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getDoPaymentMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void doHolding(com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingRequest request,
-        io.grpc.stub.StreamObserver<com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingResponse> responseObserver) {
+    public void doHolding(com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingRequest request,
+        io.grpc.stub.StreamObserver<com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getDoHoldingMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void extendHolding(com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingRequest request,
-        io.grpc.stub.StreamObserver<com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingResponse> responseObserver) {
+    public void extendHolding(com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingRequest request,
+        io.grpc.stub.StreamObserver<com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getExtendHoldingMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void clearHolding(com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingRequest request,
-        io.grpc.stub.StreamObserver<com.choulatte.pay.grpc.PaymentServiceOuterClass.Response> responseObserver) {
+    public void clearHolding(com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingRequest request,
+        io.grpc.stub.StreamObserver<com.choulatte.scentpay.grpc.PaymentServiceOuterClass.Response> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getClearHoldingMethod(), getCallOptions()), request, responseObserver);
     }
@@ -311,28 +311,28 @@ public final class PaymentServiceGrpc {
 
     /**
      */
-    public com.choulatte.pay.grpc.PaymentServiceOuterClass.TransactionResponse doPayment(com.choulatte.pay.grpc.PaymentServiceOuterClass.TransactionRequest request) {
+    public com.choulatte.scentpay.grpc.PaymentServiceOuterClass.TransactionResponse doPayment(com.choulatte.scentpay.grpc.PaymentServiceOuterClass.TransactionRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getDoPaymentMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingResponse doHolding(com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingRequest request) {
+    public com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingResponse doHolding(com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getDoHoldingMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingResponse extendHolding(com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingRequest request) {
+    public com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingResponse extendHolding(com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getExtendHoldingMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public com.choulatte.pay.grpc.PaymentServiceOuterClass.Response clearHolding(com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingRequest request) {
+    public com.choulatte.scentpay.grpc.PaymentServiceOuterClass.Response clearHolding(com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getClearHoldingMethod(), getCallOptions(), request);
     }
@@ -354,32 +354,32 @@ public final class PaymentServiceGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.choulatte.pay.grpc.PaymentServiceOuterClass.TransactionResponse> doPayment(
-        com.choulatte.pay.grpc.PaymentServiceOuterClass.TransactionRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<com.choulatte.scentpay.grpc.PaymentServiceOuterClass.TransactionResponse> doPayment(
+        com.choulatte.scentpay.grpc.PaymentServiceOuterClass.TransactionRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getDoPaymentMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingResponse> doHolding(
-        com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingResponse> doHolding(
+        com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getDoHoldingMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingResponse> extendHolding(
-        com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingResponse> extendHolding(
+        com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getExtendHoldingMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.choulatte.pay.grpc.PaymentServiceOuterClass.Response> clearHolding(
-        com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<com.choulatte.scentpay.grpc.PaymentServiceOuterClass.Response> clearHolding(
+        com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getClearHoldingMethod(), getCallOptions()), request);
     }
@@ -408,20 +408,20 @@ public final class PaymentServiceGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_DO_PAYMENT:
-          serviceImpl.doPayment((com.choulatte.pay.grpc.PaymentServiceOuterClass.TransactionRequest) request,
-              (io.grpc.stub.StreamObserver<com.choulatte.pay.grpc.PaymentServiceOuterClass.TransactionResponse>) responseObserver);
+          serviceImpl.doPayment((com.choulatte.scentpay.grpc.PaymentServiceOuterClass.TransactionRequest) request,
+              (io.grpc.stub.StreamObserver<com.choulatte.scentpay.grpc.PaymentServiceOuterClass.TransactionResponse>) responseObserver);
           break;
         case METHODID_DO_HOLDING:
-          serviceImpl.doHolding((com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingRequest) request,
-              (io.grpc.stub.StreamObserver<com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingResponse>) responseObserver);
+          serviceImpl.doHolding((com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingRequest) request,
+              (io.grpc.stub.StreamObserver<com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingResponse>) responseObserver);
           break;
         case METHODID_EXTEND_HOLDING:
-          serviceImpl.extendHolding((com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingRequest) request,
-              (io.grpc.stub.StreamObserver<com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingResponse>) responseObserver);
+          serviceImpl.extendHolding((com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingRequest) request,
+              (io.grpc.stub.StreamObserver<com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingResponse>) responseObserver);
           break;
         case METHODID_CLEAR_HOLDING:
-          serviceImpl.clearHolding((com.choulatte.pay.grpc.PaymentServiceOuterClass.HoldingRequest) request,
-              (io.grpc.stub.StreamObserver<com.choulatte.pay.grpc.PaymentServiceOuterClass.Response>) responseObserver);
+          serviceImpl.clearHolding((com.choulatte.scentpay.grpc.PaymentServiceOuterClass.HoldingRequest) request,
+              (io.grpc.stub.StreamObserver<com.choulatte.scentpay.grpc.PaymentServiceOuterClass.Response>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -445,7 +445,7 @@ public final class PaymentServiceGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return com.choulatte.pay.grpc.PaymentServiceOuterClass.getDescriptor();
+      return com.choulatte.scentpay.grpc.PaymentServiceOuterClass.getDescriptor();
     }
 
     @java.lang.Override

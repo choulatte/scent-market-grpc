@@ -1,4 +1,4 @@
-package com.choulatte.product.grpc;
+package com.choulatte.scentproduct.grpc;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 
@@ -14,29 +14,29 @@ public final class ProductServiceGrpc {
   public static final String SERVICE_NAME = "grpc.ProductService";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingRequest,
-      com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingResponse> getDoUserProductsPendingMethod;
+  private static volatile io.grpc.MethodDescriptor<com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingRequest,
+      com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingResponse> getDoUserProductsPendingMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "doUserProductsPending",
-      requestType = com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingRequest.class,
-      responseType = com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingResponse.class,
+      requestType = com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingRequest.class,
+      responseType = com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingRequest,
-      com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingResponse> getDoUserProductsPendingMethod() {
-    io.grpc.MethodDescriptor<com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingRequest, com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingResponse> getDoUserProductsPendingMethod;
+  public static io.grpc.MethodDescriptor<com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingRequest,
+      com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingResponse> getDoUserProductsPendingMethod() {
+    io.grpc.MethodDescriptor<com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingRequest, com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingResponse> getDoUserProductsPendingMethod;
     if ((getDoUserProductsPendingMethod = ProductServiceGrpc.getDoUserProductsPendingMethod) == null) {
       synchronized (ProductServiceGrpc.class) {
         if ((getDoUserProductsPendingMethod = ProductServiceGrpc.getDoUserProductsPendingMethod) == null) {
           ProductServiceGrpc.getDoUserProductsPendingMethod = getDoUserProductsPendingMethod =
-              io.grpc.MethodDescriptor.<com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingRequest, com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingResponse>newBuilder()
+              io.grpc.MethodDescriptor.<com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingRequest, com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "doUserProductsPending"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingRequest.getDefaultInstance()))
+                  com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingResponse.getDefaultInstance()))
+                  com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingResponse.getDefaultInstance()))
               .setSchemaDescriptor(new ProductServiceMethodDescriptorSupplier("doUserProductsPending"))
               .build();
         }
@@ -45,29 +45,29 @@ public final class ProductServiceGrpc {
     return getDoUserProductsPendingMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingRequest,
-      com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingResponse> getUndoUserProductsPendingMethod;
+  private static volatile io.grpc.MethodDescriptor<com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingRequest,
+      com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingResponse> getUndoUserProductsPendingMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "undoUserProductsPending",
-      requestType = com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingRequest.class,
-      responseType = com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingResponse.class,
+      requestType = com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingRequest.class,
+      responseType = com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingRequest,
-      com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingResponse> getUndoUserProductsPendingMethod() {
-    io.grpc.MethodDescriptor<com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingRequest, com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingResponse> getUndoUserProductsPendingMethod;
+  public static io.grpc.MethodDescriptor<com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingRequest,
+      com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingResponse> getUndoUserProductsPendingMethod() {
+    io.grpc.MethodDescriptor<com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingRequest, com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingResponse> getUndoUserProductsPendingMethod;
     if ((getUndoUserProductsPendingMethod = ProductServiceGrpc.getUndoUserProductsPendingMethod) == null) {
       synchronized (ProductServiceGrpc.class) {
         if ((getUndoUserProductsPendingMethod = ProductServiceGrpc.getUndoUserProductsPendingMethod) == null) {
           ProductServiceGrpc.getUndoUserProductsPendingMethod = getUndoUserProductsPendingMethod =
-              io.grpc.MethodDescriptor.<com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingRequest, com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingResponse>newBuilder()
+              io.grpc.MethodDescriptor.<com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingRequest, com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "undoUserProductsPending"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingRequest.getDefaultInstance()))
+                  com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingResponse.getDefaultInstance()))
+                  com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingResponse.getDefaultInstance()))
               .setSchemaDescriptor(new ProductServiceMethodDescriptorSupplier("undoUserProductsPending"))
               .build();
         }
@@ -76,29 +76,29 @@ public final class ProductServiceGrpc {
     return getUndoUserProductsPendingMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<com.choulatte.product.grpc.ProductServiceOuterClass.ProductsInvalidatingRequest,
-      com.choulatte.product.grpc.ProductServiceOuterClass.ProductsInvalidatingResponse> getDoUserProductsInvalidatingMethod;
+  private static volatile io.grpc.MethodDescriptor<com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsInvalidatingRequest,
+      com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsInvalidatingResponse> getDoUserProductsInvalidatingMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "doUserProductsInvalidating",
-      requestType = com.choulatte.product.grpc.ProductServiceOuterClass.ProductsInvalidatingRequest.class,
-      responseType = com.choulatte.product.grpc.ProductServiceOuterClass.ProductsInvalidatingResponse.class,
+      requestType = com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsInvalidatingRequest.class,
+      responseType = com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsInvalidatingResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<com.choulatte.product.grpc.ProductServiceOuterClass.ProductsInvalidatingRequest,
-      com.choulatte.product.grpc.ProductServiceOuterClass.ProductsInvalidatingResponse> getDoUserProductsInvalidatingMethod() {
-    io.grpc.MethodDescriptor<com.choulatte.product.grpc.ProductServiceOuterClass.ProductsInvalidatingRequest, com.choulatte.product.grpc.ProductServiceOuterClass.ProductsInvalidatingResponse> getDoUserProductsInvalidatingMethod;
+  public static io.grpc.MethodDescriptor<com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsInvalidatingRequest,
+      com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsInvalidatingResponse> getDoUserProductsInvalidatingMethod() {
+    io.grpc.MethodDescriptor<com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsInvalidatingRequest, com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsInvalidatingResponse> getDoUserProductsInvalidatingMethod;
     if ((getDoUserProductsInvalidatingMethod = ProductServiceGrpc.getDoUserProductsInvalidatingMethod) == null) {
       synchronized (ProductServiceGrpc.class) {
         if ((getDoUserProductsInvalidatingMethod = ProductServiceGrpc.getDoUserProductsInvalidatingMethod) == null) {
           ProductServiceGrpc.getDoUserProductsInvalidatingMethod = getDoUserProductsInvalidatingMethod =
-              io.grpc.MethodDescriptor.<com.choulatte.product.grpc.ProductServiceOuterClass.ProductsInvalidatingRequest, com.choulatte.product.grpc.ProductServiceOuterClass.ProductsInvalidatingResponse>newBuilder()
+              io.grpc.MethodDescriptor.<com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsInvalidatingRequest, com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsInvalidatingResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "doUserProductsInvalidating"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.choulatte.product.grpc.ProductServiceOuterClass.ProductsInvalidatingRequest.getDefaultInstance()))
+                  com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsInvalidatingRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.choulatte.product.grpc.ProductServiceOuterClass.ProductsInvalidatingResponse.getDefaultInstance()))
+                  com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsInvalidatingResponse.getDefaultInstance()))
               .setSchemaDescriptor(new ProductServiceMethodDescriptorSupplier("doUserProductsInvalidating"))
               .build();
         }
@@ -157,22 +157,22 @@ public final class ProductServiceGrpc {
 
     /**
      */
-    public void doUserProductsPending(com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingRequest request,
-        io.grpc.stub.StreamObserver<com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingResponse> responseObserver) {
+    public void doUserProductsPending(com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingRequest request,
+        io.grpc.stub.StreamObserver<com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getDoUserProductsPendingMethod(), responseObserver);
     }
 
     /**
      */
-    public void undoUserProductsPending(com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingRequest request,
-        io.grpc.stub.StreamObserver<com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingResponse> responseObserver) {
+    public void undoUserProductsPending(com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingRequest request,
+        io.grpc.stub.StreamObserver<com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getUndoUserProductsPendingMethod(), responseObserver);
     }
 
     /**
      */
-    public void doUserProductsInvalidating(com.choulatte.product.grpc.ProductServiceOuterClass.ProductsInvalidatingRequest request,
-        io.grpc.stub.StreamObserver<com.choulatte.product.grpc.ProductServiceOuterClass.ProductsInvalidatingResponse> responseObserver) {
+    public void doUserProductsInvalidating(com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsInvalidatingRequest request,
+        io.grpc.stub.StreamObserver<com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsInvalidatingResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getDoUserProductsInvalidatingMethod(), responseObserver);
     }
 
@@ -182,22 +182,22 @@ public final class ProductServiceGrpc {
             getDoUserProductsPendingMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingRequest,
-                com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingResponse>(
+                com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingRequest,
+                com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingResponse>(
                   this, METHODID_DO_USER_PRODUCTS_PENDING)))
           .addMethod(
             getUndoUserProductsPendingMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingRequest,
-                com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingResponse>(
+                com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingRequest,
+                com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingResponse>(
                   this, METHODID_UNDO_USER_PRODUCTS_PENDING)))
           .addMethod(
             getDoUserProductsInvalidatingMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                com.choulatte.product.grpc.ProductServiceOuterClass.ProductsInvalidatingRequest,
-                com.choulatte.product.grpc.ProductServiceOuterClass.ProductsInvalidatingResponse>(
+                com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsInvalidatingRequest,
+                com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsInvalidatingResponse>(
                   this, METHODID_DO_USER_PRODUCTS_INVALIDATING)))
           .build();
     }
@@ -219,24 +219,24 @@ public final class ProductServiceGrpc {
 
     /**
      */
-    public void doUserProductsPending(com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingRequest request,
-        io.grpc.stub.StreamObserver<com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingResponse> responseObserver) {
+    public void doUserProductsPending(com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingRequest request,
+        io.grpc.stub.StreamObserver<com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getDoUserProductsPendingMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void undoUserProductsPending(com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingRequest request,
-        io.grpc.stub.StreamObserver<com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingResponse> responseObserver) {
+    public void undoUserProductsPending(com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingRequest request,
+        io.grpc.stub.StreamObserver<com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getUndoUserProductsPendingMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void doUserProductsInvalidating(com.choulatte.product.grpc.ProductServiceOuterClass.ProductsInvalidatingRequest request,
-        io.grpc.stub.StreamObserver<com.choulatte.product.grpc.ProductServiceOuterClass.ProductsInvalidatingResponse> responseObserver) {
+    public void doUserProductsInvalidating(com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsInvalidatingRequest request,
+        io.grpc.stub.StreamObserver<com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsInvalidatingResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getDoUserProductsInvalidatingMethod(), getCallOptions()), request, responseObserver);
     }
@@ -258,21 +258,21 @@ public final class ProductServiceGrpc {
 
     /**
      */
-    public com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingResponse doUserProductsPending(com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingRequest request) {
+    public com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingResponse doUserProductsPending(com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getDoUserProductsPendingMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingResponse undoUserProductsPending(com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingRequest request) {
+    public com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingResponse undoUserProductsPending(com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getUndoUserProductsPendingMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public com.choulatte.product.grpc.ProductServiceOuterClass.ProductsInvalidatingResponse doUserProductsInvalidating(com.choulatte.product.grpc.ProductServiceOuterClass.ProductsInvalidatingRequest request) {
+    public com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsInvalidatingResponse doUserProductsInvalidating(com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsInvalidatingRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getDoUserProductsInvalidatingMethod(), getCallOptions(), request);
     }
@@ -294,24 +294,24 @@ public final class ProductServiceGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingResponse> doUserProductsPending(
-        com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingResponse> doUserProductsPending(
+        com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getDoUserProductsPendingMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingResponse> undoUserProductsPending(
-        com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingResponse> undoUserProductsPending(
+        com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getUndoUserProductsPendingMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.choulatte.product.grpc.ProductServiceOuterClass.ProductsInvalidatingResponse> doUserProductsInvalidating(
-        com.choulatte.product.grpc.ProductServiceOuterClass.ProductsInvalidatingRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsInvalidatingResponse> doUserProductsInvalidating(
+        com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsInvalidatingRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getDoUserProductsInvalidatingMethod(), getCallOptions()), request);
     }
@@ -339,16 +339,16 @@ public final class ProductServiceGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_DO_USER_PRODUCTS_PENDING:
-          serviceImpl.doUserProductsPending((com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingRequest) request,
-              (io.grpc.stub.StreamObserver<com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingResponse>) responseObserver);
+          serviceImpl.doUserProductsPending((com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingRequest) request,
+              (io.grpc.stub.StreamObserver<com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingResponse>) responseObserver);
           break;
         case METHODID_UNDO_USER_PRODUCTS_PENDING:
-          serviceImpl.undoUserProductsPending((com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingRequest) request,
-              (io.grpc.stub.StreamObserver<com.choulatte.product.grpc.ProductServiceOuterClass.ProductsPendingResponse>) responseObserver);
+          serviceImpl.undoUserProductsPending((com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingRequest) request,
+              (io.grpc.stub.StreamObserver<com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsPendingResponse>) responseObserver);
           break;
         case METHODID_DO_USER_PRODUCTS_INVALIDATING:
-          serviceImpl.doUserProductsInvalidating((com.choulatte.product.grpc.ProductServiceOuterClass.ProductsInvalidatingRequest) request,
-              (io.grpc.stub.StreamObserver<com.choulatte.product.grpc.ProductServiceOuterClass.ProductsInvalidatingResponse>) responseObserver);
+          serviceImpl.doUserProductsInvalidating((com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsInvalidatingRequest) request,
+              (io.grpc.stub.StreamObserver<com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductsInvalidatingResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -372,7 +372,7 @@ public final class ProductServiceGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return com.choulatte.product.grpc.ProductServiceOuterClass.getDescriptor();
+      return com.choulatte.scentproduct.grpc.ProductServiceOuterClass.getDescriptor();
     }
 
     @java.lang.Override

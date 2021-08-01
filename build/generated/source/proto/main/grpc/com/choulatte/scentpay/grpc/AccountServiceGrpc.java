@@ -1,4 +1,4 @@
-package com.choulatte.pay.grpc;
+package com.choulatte.scentpay.grpc;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 
@@ -14,29 +14,29 @@ public final class AccountServiceGrpc {
   public static final String SERVICE_NAME = "grpc.AccountService";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingRequest,
-      com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingResponse> getDoUserAccountsPendingMethod;
+  private static volatile io.grpc.MethodDescriptor<com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingRequest,
+      com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingResponse> getDoUserAccountsPendingMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "doUserAccountsPending",
-      requestType = com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingRequest.class,
-      responseType = com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingResponse.class,
+      requestType = com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingRequest.class,
+      responseType = com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingRequest,
-      com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingResponse> getDoUserAccountsPendingMethod() {
-    io.grpc.MethodDescriptor<com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingRequest, com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingResponse> getDoUserAccountsPendingMethod;
+  public static io.grpc.MethodDescriptor<com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingRequest,
+      com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingResponse> getDoUserAccountsPendingMethod() {
+    io.grpc.MethodDescriptor<com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingRequest, com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingResponse> getDoUserAccountsPendingMethod;
     if ((getDoUserAccountsPendingMethod = AccountServiceGrpc.getDoUserAccountsPendingMethod) == null) {
       synchronized (AccountServiceGrpc.class) {
         if ((getDoUserAccountsPendingMethod = AccountServiceGrpc.getDoUserAccountsPendingMethod) == null) {
           AccountServiceGrpc.getDoUserAccountsPendingMethod = getDoUserAccountsPendingMethod =
-              io.grpc.MethodDescriptor.<com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingRequest, com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingResponse>newBuilder()
+              io.grpc.MethodDescriptor.<com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingRequest, com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "doUserAccountsPending"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingRequest.getDefaultInstance()))
+                  com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingResponse.getDefaultInstance()))
+                  com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingResponse.getDefaultInstance()))
               .setSchemaDescriptor(new AccountServiceMethodDescriptorSupplier("doUserAccountsPending"))
               .build();
         }
@@ -45,29 +45,29 @@ public final class AccountServiceGrpc {
     return getDoUserAccountsPendingMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingRequest,
-      com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingResponse> getUndoUserAccountsPendingMethod;
+  private static volatile io.grpc.MethodDescriptor<com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingRequest,
+      com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingResponse> getUndoUserAccountsPendingMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "undoUserAccountsPending",
-      requestType = com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingRequest.class,
-      responseType = com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingResponse.class,
+      requestType = com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingRequest.class,
+      responseType = com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingRequest,
-      com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingResponse> getUndoUserAccountsPendingMethod() {
-    io.grpc.MethodDescriptor<com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingRequest, com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingResponse> getUndoUserAccountsPendingMethod;
+  public static io.grpc.MethodDescriptor<com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingRequest,
+      com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingResponse> getUndoUserAccountsPendingMethod() {
+    io.grpc.MethodDescriptor<com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingRequest, com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingResponse> getUndoUserAccountsPendingMethod;
     if ((getUndoUserAccountsPendingMethod = AccountServiceGrpc.getUndoUserAccountsPendingMethod) == null) {
       synchronized (AccountServiceGrpc.class) {
         if ((getUndoUserAccountsPendingMethod = AccountServiceGrpc.getUndoUserAccountsPendingMethod) == null) {
           AccountServiceGrpc.getUndoUserAccountsPendingMethod = getUndoUserAccountsPendingMethod =
-              io.grpc.MethodDescriptor.<com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingRequest, com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingResponse>newBuilder()
+              io.grpc.MethodDescriptor.<com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingRequest, com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "undoUserAccountsPending"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingRequest.getDefaultInstance()))
+                  com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingResponse.getDefaultInstance()))
+                  com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingResponse.getDefaultInstance()))
               .setSchemaDescriptor(new AccountServiceMethodDescriptorSupplier("undoUserAccountsPending"))
               .build();
         }
@@ -76,29 +76,29 @@ public final class AccountServiceGrpc {
     return getUndoUserAccountsPendingMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsInvalidatingRequest,
-      com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsInvalidatingResponse> getDoUserAccountsInvalidatingMethod;
+  private static volatile io.grpc.MethodDescriptor<com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsInvalidatingRequest,
+      com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsInvalidatingResponse> getDoUserAccountsInvalidatingMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "doUserAccountsInvalidating",
-      requestType = com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsInvalidatingRequest.class,
-      responseType = com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsInvalidatingResponse.class,
+      requestType = com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsInvalidatingRequest.class,
+      responseType = com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsInvalidatingResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsInvalidatingRequest,
-      com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsInvalidatingResponse> getDoUserAccountsInvalidatingMethod() {
-    io.grpc.MethodDescriptor<com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsInvalidatingRequest, com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsInvalidatingResponse> getDoUserAccountsInvalidatingMethod;
+  public static io.grpc.MethodDescriptor<com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsInvalidatingRequest,
+      com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsInvalidatingResponse> getDoUserAccountsInvalidatingMethod() {
+    io.grpc.MethodDescriptor<com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsInvalidatingRequest, com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsInvalidatingResponse> getDoUserAccountsInvalidatingMethod;
     if ((getDoUserAccountsInvalidatingMethod = AccountServiceGrpc.getDoUserAccountsInvalidatingMethod) == null) {
       synchronized (AccountServiceGrpc.class) {
         if ((getDoUserAccountsInvalidatingMethod = AccountServiceGrpc.getDoUserAccountsInvalidatingMethod) == null) {
           AccountServiceGrpc.getDoUserAccountsInvalidatingMethod = getDoUserAccountsInvalidatingMethod =
-              io.grpc.MethodDescriptor.<com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsInvalidatingRequest, com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsInvalidatingResponse>newBuilder()
+              io.grpc.MethodDescriptor.<com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsInvalidatingRequest, com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsInvalidatingResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "doUserAccountsInvalidating"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsInvalidatingRequest.getDefaultInstance()))
+                  com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsInvalidatingRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsInvalidatingResponse.getDefaultInstance()))
+                  com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsInvalidatingResponse.getDefaultInstance()))
               .setSchemaDescriptor(new AccountServiceMethodDescriptorSupplier("doUserAccountsInvalidating"))
               .build();
         }
@@ -157,22 +157,22 @@ public final class AccountServiceGrpc {
 
     /**
      */
-    public void doUserAccountsPending(com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingRequest request,
-        io.grpc.stub.StreamObserver<com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingResponse> responseObserver) {
+    public void doUserAccountsPending(com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingRequest request,
+        io.grpc.stub.StreamObserver<com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getDoUserAccountsPendingMethod(), responseObserver);
     }
 
     /**
      */
-    public void undoUserAccountsPending(com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingRequest request,
-        io.grpc.stub.StreamObserver<com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingResponse> responseObserver) {
+    public void undoUserAccountsPending(com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingRequest request,
+        io.grpc.stub.StreamObserver<com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getUndoUserAccountsPendingMethod(), responseObserver);
     }
 
     /**
      */
-    public void doUserAccountsInvalidating(com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsInvalidatingRequest request,
-        io.grpc.stub.StreamObserver<com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsInvalidatingResponse> responseObserver) {
+    public void doUserAccountsInvalidating(com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsInvalidatingRequest request,
+        io.grpc.stub.StreamObserver<com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsInvalidatingResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getDoUserAccountsInvalidatingMethod(), responseObserver);
     }
 
@@ -182,22 +182,22 @@ public final class AccountServiceGrpc {
             getDoUserAccountsPendingMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingRequest,
-                com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingResponse>(
+                com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingRequest,
+                com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingResponse>(
                   this, METHODID_DO_USER_ACCOUNTS_PENDING)))
           .addMethod(
             getUndoUserAccountsPendingMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingRequest,
-                com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingResponse>(
+                com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingRequest,
+                com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingResponse>(
                   this, METHODID_UNDO_USER_ACCOUNTS_PENDING)))
           .addMethod(
             getDoUserAccountsInvalidatingMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsInvalidatingRequest,
-                com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsInvalidatingResponse>(
+                com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsInvalidatingRequest,
+                com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsInvalidatingResponse>(
                   this, METHODID_DO_USER_ACCOUNTS_INVALIDATING)))
           .build();
     }
@@ -219,24 +219,24 @@ public final class AccountServiceGrpc {
 
     /**
      */
-    public void doUserAccountsPending(com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingRequest request,
-        io.grpc.stub.StreamObserver<com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingResponse> responseObserver) {
+    public void doUserAccountsPending(com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingRequest request,
+        io.grpc.stub.StreamObserver<com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getDoUserAccountsPendingMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void undoUserAccountsPending(com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingRequest request,
-        io.grpc.stub.StreamObserver<com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingResponse> responseObserver) {
+    public void undoUserAccountsPending(com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingRequest request,
+        io.grpc.stub.StreamObserver<com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getUndoUserAccountsPendingMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void doUserAccountsInvalidating(com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsInvalidatingRequest request,
-        io.grpc.stub.StreamObserver<com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsInvalidatingResponse> responseObserver) {
+    public void doUserAccountsInvalidating(com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsInvalidatingRequest request,
+        io.grpc.stub.StreamObserver<com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsInvalidatingResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getDoUserAccountsInvalidatingMethod(), getCallOptions()), request, responseObserver);
     }
@@ -258,21 +258,21 @@ public final class AccountServiceGrpc {
 
     /**
      */
-    public com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingResponse doUserAccountsPending(com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingRequest request) {
+    public com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingResponse doUserAccountsPending(com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getDoUserAccountsPendingMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingResponse undoUserAccountsPending(com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingRequest request) {
+    public com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingResponse undoUserAccountsPending(com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getUndoUserAccountsPendingMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsInvalidatingResponse doUserAccountsInvalidating(com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsInvalidatingRequest request) {
+    public com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsInvalidatingResponse doUserAccountsInvalidating(com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsInvalidatingRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getDoUserAccountsInvalidatingMethod(), getCallOptions(), request);
     }
@@ -294,24 +294,24 @@ public final class AccountServiceGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingResponse> doUserAccountsPending(
-        com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingResponse> doUserAccountsPending(
+        com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getDoUserAccountsPendingMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingResponse> undoUserAccountsPending(
-        com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingResponse> undoUserAccountsPending(
+        com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getUndoUserAccountsPendingMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsInvalidatingResponse> doUserAccountsInvalidating(
-        com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsInvalidatingRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsInvalidatingResponse> doUserAccountsInvalidating(
+        com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsInvalidatingRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getDoUserAccountsInvalidatingMethod(), getCallOptions()), request);
     }
@@ -339,16 +339,16 @@ public final class AccountServiceGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_DO_USER_ACCOUNTS_PENDING:
-          serviceImpl.doUserAccountsPending((com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingRequest) request,
-              (io.grpc.stub.StreamObserver<com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingResponse>) responseObserver);
+          serviceImpl.doUserAccountsPending((com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingRequest) request,
+              (io.grpc.stub.StreamObserver<com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingResponse>) responseObserver);
           break;
         case METHODID_UNDO_USER_ACCOUNTS_PENDING:
-          serviceImpl.undoUserAccountsPending((com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingRequest) request,
-              (io.grpc.stub.StreamObserver<com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsPendingResponse>) responseObserver);
+          serviceImpl.undoUserAccountsPending((com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingRequest) request,
+              (io.grpc.stub.StreamObserver<com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsPendingResponse>) responseObserver);
           break;
         case METHODID_DO_USER_ACCOUNTS_INVALIDATING:
-          serviceImpl.doUserAccountsInvalidating((com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsInvalidatingRequest) request,
-              (io.grpc.stub.StreamObserver<com.choulatte.pay.grpc.AccountServiceOuterClass.AccountsInvalidatingResponse>) responseObserver);
+          serviceImpl.doUserAccountsInvalidating((com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsInvalidatingRequest) request,
+              (io.grpc.stub.StreamObserver<com.choulatte.scentpay.grpc.AccountServiceOuterClass.AccountsInvalidatingResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -372,7 +372,7 @@ public final class AccountServiceGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return com.choulatte.pay.grpc.AccountServiceOuterClass.getDescriptor();
+      return com.choulatte.scentpay.grpc.AccountServiceOuterClass.getDescriptor();
     }
 
     @java.lang.Override
