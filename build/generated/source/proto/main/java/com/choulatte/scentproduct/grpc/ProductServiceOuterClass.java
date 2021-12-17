@@ -2652,6 +2652,1605 @@ public final class ProductServiceOuterClass {
 
   }
 
+  public interface ProductDetailRequestOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:grpc.ProductDetailRequest)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>int64 productId = 1;</code>
+     * @return The productId.
+     */
+    long getProductId();
+  }
+  /**
+   * Protobuf type {@code grpc.ProductDetailRequest}
+   */
+  public static final class ProductDetailRequest extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:grpc.ProductDetailRequest)
+      ProductDetailRequestOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use ProductDetailRequest.newBuilder() to construct.
+    private ProductDetailRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private ProductDetailRequest() {
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new ProductDetailRequest();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private ProductDetailRequest(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 8: {
+
+              productId_ = input.readInt64();
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.choulatte.scentproduct.grpc.ProductServiceOuterClass.internal_static_grpc_ProductDetailRequest_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.choulatte.scentproduct.grpc.ProductServiceOuterClass.internal_static_grpc_ProductDetailRequest_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailRequest.class, com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailRequest.Builder.class);
+    }
+
+    public static final int PRODUCTID_FIELD_NUMBER = 1;
+    private long productId_;
+    /**
+     * <code>int64 productId = 1;</code>
+     * @return The productId.
+     */
+    @java.lang.Override
+    public long getProductId() {
+      return productId_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (productId_ != 0L) {
+        output.writeInt64(1, productId_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (productId_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(1, productId_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailRequest)) {
+        return super.equals(obj);
+      }
+      com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailRequest other = (com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailRequest) obj;
+
+      if (getProductId()
+          != other.getProductId()) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + PRODUCTID_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getProductId());
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailRequest parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailRequest parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailRequest parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailRequest parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailRequest parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailRequest parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailRequest parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailRequest parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailRequest parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailRequest parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailRequest prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code grpc.ProductDetailRequest}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:grpc.ProductDetailRequest)
+        com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailRequestOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.choulatte.scentproduct.grpc.ProductServiceOuterClass.internal_static_grpc_ProductDetailRequest_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.choulatte.scentproduct.grpc.ProductServiceOuterClass.internal_static_grpc_ProductDetailRequest_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailRequest.class, com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailRequest.Builder.class);
+      }
+
+      // Construct using com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailRequest.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        productId_ = 0L;
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.choulatte.scentproduct.grpc.ProductServiceOuterClass.internal_static_grpc_ProductDetailRequest_descriptor;
+      }
+
+      @java.lang.Override
+      public com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailRequest getDefaultInstanceForType() {
+        return com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailRequest.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailRequest build() {
+        com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailRequest result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailRequest buildPartial() {
+        com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailRequest result = new com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailRequest(this);
+        result.productId_ = productId_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailRequest) {
+          return mergeFrom((com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailRequest)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailRequest other) {
+        if (other == com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailRequest.getDefaultInstance()) return this;
+        if (other.getProductId() != 0L) {
+          setProductId(other.getProductId());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailRequest parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailRequest) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private long productId_ ;
+      /**
+       * <code>int64 productId = 1;</code>
+       * @return The productId.
+       */
+      @java.lang.Override
+      public long getProductId() {
+        return productId_;
+      }
+      /**
+       * <code>int64 productId = 1;</code>
+       * @param value The productId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setProductId(long value) {
+        
+        productId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int64 productId = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearProductId() {
+        
+        productId_ = 0L;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:grpc.ProductDetailRequest)
+    }
+
+    // @@protoc_insertion_point(class_scope:grpc.ProductDetailRequest)
+    private static final com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailRequest DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailRequest();
+    }
+
+    public static com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailRequest getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<ProductDetailRequest>
+        PARSER = new com.google.protobuf.AbstractParser<ProductDetailRequest>() {
+      @java.lang.Override
+      public ProductDetailRequest parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new ProductDetailRequest(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<ProductDetailRequest> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<ProductDetailRequest> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailRequest getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface ProductDetailResponseOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:grpc.ProductDetailResponse)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>.grpc.ProductDetailResponse.Status status = 1;</code>
+     * @return The enum numeric value on the wire for status.
+     */
+    int getStatusValue();
+    /**
+     * <code>.grpc.ProductDetailResponse.Status status = 1;</code>
+     * @return The status.
+     */
+    com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse.Status getStatus();
+
+    /**
+     * <code>.google.protobuf.Timestamp startingDatetime = 2;</code>
+     * @return Whether the startingDatetime field is set.
+     */
+    boolean hasStartingDatetime();
+    /**
+     * <code>.google.protobuf.Timestamp startingDatetime = 2;</code>
+     * @return The startingDatetime.
+     */
+    com.google.protobuf.Timestamp getStartingDatetime();
+    /**
+     * <code>.google.protobuf.Timestamp startingDatetime = 2;</code>
+     */
+    com.google.protobuf.TimestampOrBuilder getStartingDatetimeOrBuilder();
+
+    /**
+     * <code>.google.protobuf.Timestamp endingDatetime = 3;</code>
+     * @return Whether the endingDatetime field is set.
+     */
+    boolean hasEndingDatetime();
+    /**
+     * <code>.google.protobuf.Timestamp endingDatetime = 3;</code>
+     * @return The endingDatetime.
+     */
+    com.google.protobuf.Timestamp getEndingDatetime();
+    /**
+     * <code>.google.protobuf.Timestamp endingDatetime = 3;</code>
+     */
+    com.google.protobuf.TimestampOrBuilder getEndingDatetimeOrBuilder();
+
+    /**
+     * <code>int64 startingPrice = 4;</code>
+     * @return The startingPrice.
+     */
+    long getStartingPrice();
+  }
+  /**
+   * Protobuf type {@code grpc.ProductDetailResponse}
+   */
+  public static final class ProductDetailResponse extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:grpc.ProductDetailResponse)
+      ProductDetailResponseOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use ProductDetailResponse.newBuilder() to construct.
+    private ProductDetailResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private ProductDetailResponse() {
+      status_ = 0;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new ProductDetailResponse();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private ProductDetailResponse(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 8: {
+              int rawValue = input.readEnum();
+
+              status_ = rawValue;
+              break;
+            }
+            case 18: {
+              com.google.protobuf.Timestamp.Builder subBuilder = null;
+              if (startingDatetime_ != null) {
+                subBuilder = startingDatetime_.toBuilder();
+              }
+              startingDatetime_ = input.readMessage(com.google.protobuf.Timestamp.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(startingDatetime_);
+                startingDatetime_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 26: {
+              com.google.protobuf.Timestamp.Builder subBuilder = null;
+              if (endingDatetime_ != null) {
+                subBuilder = endingDatetime_.toBuilder();
+              }
+              endingDatetime_ = input.readMessage(com.google.protobuf.Timestamp.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(endingDatetime_);
+                endingDatetime_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 32: {
+
+              startingPrice_ = input.readInt64();
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.choulatte.scentproduct.grpc.ProductServiceOuterClass.internal_static_grpc_ProductDetailResponse_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.choulatte.scentproduct.grpc.ProductServiceOuterClass.internal_static_grpc_ProductDetailResponse_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse.class, com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse.Builder.class);
+    }
+
+    /**
+     * Protobuf enum {@code grpc.ProductDetailResponse.Status}
+     */
+    public enum Status
+        implements com.google.protobuf.ProtocolMessageEnum {
+      /**
+       * <code>OK = 0;</code>
+       */
+      OK(0),
+      /**
+       * <code>INVALID = 1;</code>
+       */
+      INVALID(1),
+      UNRECOGNIZED(-1),
+      ;
+
+      /**
+       * <code>OK = 0;</code>
+       */
+      public static final int OK_VALUE = 0;
+      /**
+       * <code>INVALID = 1;</code>
+       */
+      public static final int INVALID_VALUE = 1;
+
+
+      public final int getNumber() {
+        if (this == UNRECOGNIZED) {
+          throw new java.lang.IllegalArgumentException(
+              "Can't get the number of an unknown enum value.");
+        }
+        return value;
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static Status valueOf(int value) {
+        return forNumber(value);
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       */
+      public static Status forNumber(int value) {
+        switch (value) {
+          case 0: return OK;
+          case 1: return INVALID;
+          default: return null;
+        }
+      }
+
+      public static com.google.protobuf.Internal.EnumLiteMap<Status>
+          internalGetValueMap() {
+        return internalValueMap;
+      }
+      private static final com.google.protobuf.Internal.EnumLiteMap<
+          Status> internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<Status>() {
+              public Status findValueByNumber(int number) {
+                return Status.forNumber(number);
+              }
+            };
+
+      public final com.google.protobuf.Descriptors.EnumValueDescriptor
+          getValueDescriptor() {
+        if (this == UNRECOGNIZED) {
+          throw new java.lang.IllegalStateException(
+              "Can't get the descriptor of an unrecognized enum value.");
+        }
+        return getDescriptor().getValues().get(ordinal());
+      }
+      public final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptorForType() {
+        return getDescriptor();
+      }
+      public static final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptor() {
+        return com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse.getDescriptor().getEnumTypes().get(0);
+      }
+
+      private static final Status[] VALUES = values();
+
+      public static Status valueOf(
+          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+          throw new java.lang.IllegalArgumentException(
+            "EnumValueDescriptor is not for this type.");
+        }
+        if (desc.getIndex() == -1) {
+          return UNRECOGNIZED;
+        }
+        return VALUES[desc.getIndex()];
+      }
+
+      private final int value;
+
+      private Status(int value) {
+        this.value = value;
+      }
+
+      // @@protoc_insertion_point(enum_scope:grpc.ProductDetailResponse.Status)
+    }
+
+    public static final int STATUS_FIELD_NUMBER = 1;
+    private int status_;
+    /**
+     * <code>.grpc.ProductDetailResponse.Status status = 1;</code>
+     * @return The enum numeric value on the wire for status.
+     */
+    @java.lang.Override public int getStatusValue() {
+      return status_;
+    }
+    /**
+     * <code>.grpc.ProductDetailResponse.Status status = 1;</code>
+     * @return The status.
+     */
+    @java.lang.Override public com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse.Status getStatus() {
+      @SuppressWarnings("deprecation")
+      com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse.Status result = com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse.Status.valueOf(status_);
+      return result == null ? com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse.Status.UNRECOGNIZED : result;
+    }
+
+    public static final int STARTINGDATETIME_FIELD_NUMBER = 2;
+    private com.google.protobuf.Timestamp startingDatetime_;
+    /**
+     * <code>.google.protobuf.Timestamp startingDatetime = 2;</code>
+     * @return Whether the startingDatetime field is set.
+     */
+    @java.lang.Override
+    public boolean hasStartingDatetime() {
+      return startingDatetime_ != null;
+    }
+    /**
+     * <code>.google.protobuf.Timestamp startingDatetime = 2;</code>
+     * @return The startingDatetime.
+     */
+    @java.lang.Override
+    public com.google.protobuf.Timestamp getStartingDatetime() {
+      return startingDatetime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : startingDatetime_;
+    }
+    /**
+     * <code>.google.protobuf.Timestamp startingDatetime = 2;</code>
+     */
+    @java.lang.Override
+    public com.google.protobuf.TimestampOrBuilder getStartingDatetimeOrBuilder() {
+      return getStartingDatetime();
+    }
+
+    public static final int ENDINGDATETIME_FIELD_NUMBER = 3;
+    private com.google.protobuf.Timestamp endingDatetime_;
+    /**
+     * <code>.google.protobuf.Timestamp endingDatetime = 3;</code>
+     * @return Whether the endingDatetime field is set.
+     */
+    @java.lang.Override
+    public boolean hasEndingDatetime() {
+      return endingDatetime_ != null;
+    }
+    /**
+     * <code>.google.protobuf.Timestamp endingDatetime = 3;</code>
+     * @return The endingDatetime.
+     */
+    @java.lang.Override
+    public com.google.protobuf.Timestamp getEndingDatetime() {
+      return endingDatetime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : endingDatetime_;
+    }
+    /**
+     * <code>.google.protobuf.Timestamp endingDatetime = 3;</code>
+     */
+    @java.lang.Override
+    public com.google.protobuf.TimestampOrBuilder getEndingDatetimeOrBuilder() {
+      return getEndingDatetime();
+    }
+
+    public static final int STARTINGPRICE_FIELD_NUMBER = 4;
+    private long startingPrice_;
+    /**
+     * <code>int64 startingPrice = 4;</code>
+     * @return The startingPrice.
+     */
+    @java.lang.Override
+    public long getStartingPrice() {
+      return startingPrice_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (status_ != com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse.Status.OK.getNumber()) {
+        output.writeEnum(1, status_);
+      }
+      if (startingDatetime_ != null) {
+        output.writeMessage(2, getStartingDatetime());
+      }
+      if (endingDatetime_ != null) {
+        output.writeMessage(3, getEndingDatetime());
+      }
+      if (startingPrice_ != 0L) {
+        output.writeInt64(4, startingPrice_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (status_ != com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse.Status.OK.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(1, status_);
+      }
+      if (startingDatetime_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, getStartingDatetime());
+      }
+      if (endingDatetime_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(3, getEndingDatetime());
+      }
+      if (startingPrice_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(4, startingPrice_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse)) {
+        return super.equals(obj);
+      }
+      com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse other = (com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse) obj;
+
+      if (status_ != other.status_) return false;
+      if (hasStartingDatetime() != other.hasStartingDatetime()) return false;
+      if (hasStartingDatetime()) {
+        if (!getStartingDatetime()
+            .equals(other.getStartingDatetime())) return false;
+      }
+      if (hasEndingDatetime() != other.hasEndingDatetime()) return false;
+      if (hasEndingDatetime()) {
+        if (!getEndingDatetime()
+            .equals(other.getEndingDatetime())) return false;
+      }
+      if (getStartingPrice()
+          != other.getStartingPrice()) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + STATUS_FIELD_NUMBER;
+      hash = (53 * hash) + status_;
+      if (hasStartingDatetime()) {
+        hash = (37 * hash) + STARTINGDATETIME_FIELD_NUMBER;
+        hash = (53 * hash) + getStartingDatetime().hashCode();
+      }
+      if (hasEndingDatetime()) {
+        hash = (37 * hash) + ENDINGDATETIME_FIELD_NUMBER;
+        hash = (53 * hash) + getEndingDatetime().hashCode();
+      }
+      hash = (37 * hash) + STARTINGPRICE_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getStartingPrice());
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code grpc.ProductDetailResponse}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:grpc.ProductDetailResponse)
+        com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponseOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.choulatte.scentproduct.grpc.ProductServiceOuterClass.internal_static_grpc_ProductDetailResponse_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.choulatte.scentproduct.grpc.ProductServiceOuterClass.internal_static_grpc_ProductDetailResponse_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse.class, com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse.Builder.class);
+      }
+
+      // Construct using com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        status_ = 0;
+
+        if (startingDatetimeBuilder_ == null) {
+          startingDatetime_ = null;
+        } else {
+          startingDatetime_ = null;
+          startingDatetimeBuilder_ = null;
+        }
+        if (endingDatetimeBuilder_ == null) {
+          endingDatetime_ = null;
+        } else {
+          endingDatetime_ = null;
+          endingDatetimeBuilder_ = null;
+        }
+        startingPrice_ = 0L;
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.choulatte.scentproduct.grpc.ProductServiceOuterClass.internal_static_grpc_ProductDetailResponse_descriptor;
+      }
+
+      @java.lang.Override
+      public com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse getDefaultInstanceForType() {
+        return com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse build() {
+        com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse buildPartial() {
+        com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse result = new com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse(this);
+        result.status_ = status_;
+        if (startingDatetimeBuilder_ == null) {
+          result.startingDatetime_ = startingDatetime_;
+        } else {
+          result.startingDatetime_ = startingDatetimeBuilder_.build();
+        }
+        if (endingDatetimeBuilder_ == null) {
+          result.endingDatetime_ = endingDatetime_;
+        } else {
+          result.endingDatetime_ = endingDatetimeBuilder_.build();
+        }
+        result.startingPrice_ = startingPrice_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse) {
+          return mergeFrom((com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse other) {
+        if (other == com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse.getDefaultInstance()) return this;
+        if (other.status_ != 0) {
+          setStatusValue(other.getStatusValue());
+        }
+        if (other.hasStartingDatetime()) {
+          mergeStartingDatetime(other.getStartingDatetime());
+        }
+        if (other.hasEndingDatetime()) {
+          mergeEndingDatetime(other.getEndingDatetime());
+        }
+        if (other.getStartingPrice() != 0L) {
+          setStartingPrice(other.getStartingPrice());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private int status_ = 0;
+      /**
+       * <code>.grpc.ProductDetailResponse.Status status = 1;</code>
+       * @return The enum numeric value on the wire for status.
+       */
+      @java.lang.Override public int getStatusValue() {
+        return status_;
+      }
+      /**
+       * <code>.grpc.ProductDetailResponse.Status status = 1;</code>
+       * @param value The enum numeric value on the wire for status to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStatusValue(int value) {
+        
+        status_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.grpc.ProductDetailResponse.Status status = 1;</code>
+       * @return The status.
+       */
+      @java.lang.Override
+      public com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse.Status getStatus() {
+        @SuppressWarnings("deprecation")
+        com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse.Status result = com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse.Status.valueOf(status_);
+        return result == null ? com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse.Status.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.grpc.ProductDetailResponse.Status status = 1;</code>
+       * @param value The status to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStatus(com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse.Status value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        status_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.grpc.ProductDetailResponse.Status status = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStatus() {
+        
+        status_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Timestamp startingDatetime_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder> startingDatetimeBuilder_;
+      /**
+       * <code>.google.protobuf.Timestamp startingDatetime = 2;</code>
+       * @return Whether the startingDatetime field is set.
+       */
+      public boolean hasStartingDatetime() {
+        return startingDatetimeBuilder_ != null || startingDatetime_ != null;
+      }
+      /**
+       * <code>.google.protobuf.Timestamp startingDatetime = 2;</code>
+       * @return The startingDatetime.
+       */
+      public com.google.protobuf.Timestamp getStartingDatetime() {
+        if (startingDatetimeBuilder_ == null) {
+          return startingDatetime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : startingDatetime_;
+        } else {
+          return startingDatetimeBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.google.protobuf.Timestamp startingDatetime = 2;</code>
+       */
+      public Builder setStartingDatetime(com.google.protobuf.Timestamp value) {
+        if (startingDatetimeBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          startingDatetime_ = value;
+          onChanged();
+        } else {
+          startingDatetimeBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.google.protobuf.Timestamp startingDatetime = 2;</code>
+       */
+      public Builder setStartingDatetime(
+          com.google.protobuf.Timestamp.Builder builderForValue) {
+        if (startingDatetimeBuilder_ == null) {
+          startingDatetime_ = builderForValue.build();
+          onChanged();
+        } else {
+          startingDatetimeBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.google.protobuf.Timestamp startingDatetime = 2;</code>
+       */
+      public Builder mergeStartingDatetime(com.google.protobuf.Timestamp value) {
+        if (startingDatetimeBuilder_ == null) {
+          if (startingDatetime_ != null) {
+            startingDatetime_ =
+              com.google.protobuf.Timestamp.newBuilder(startingDatetime_).mergeFrom(value).buildPartial();
+          } else {
+            startingDatetime_ = value;
+          }
+          onChanged();
+        } else {
+          startingDatetimeBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.google.protobuf.Timestamp startingDatetime = 2;</code>
+       */
+      public Builder clearStartingDatetime() {
+        if (startingDatetimeBuilder_ == null) {
+          startingDatetime_ = null;
+          onChanged();
+        } else {
+          startingDatetime_ = null;
+          startingDatetimeBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.google.protobuf.Timestamp startingDatetime = 2;</code>
+       */
+      public com.google.protobuf.Timestamp.Builder getStartingDatetimeBuilder() {
+        
+        onChanged();
+        return getStartingDatetimeFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.google.protobuf.Timestamp startingDatetime = 2;</code>
+       */
+      public com.google.protobuf.TimestampOrBuilder getStartingDatetimeOrBuilder() {
+        if (startingDatetimeBuilder_ != null) {
+          return startingDatetimeBuilder_.getMessageOrBuilder();
+        } else {
+          return startingDatetime_ == null ?
+              com.google.protobuf.Timestamp.getDefaultInstance() : startingDatetime_;
+        }
+      }
+      /**
+       * <code>.google.protobuf.Timestamp startingDatetime = 2;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder> 
+          getStartingDatetimeFieldBuilder() {
+        if (startingDatetimeBuilder_ == null) {
+          startingDatetimeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder>(
+                  getStartingDatetime(),
+                  getParentForChildren(),
+                  isClean());
+          startingDatetime_ = null;
+        }
+        return startingDatetimeBuilder_;
+      }
+
+      private com.google.protobuf.Timestamp endingDatetime_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder> endingDatetimeBuilder_;
+      /**
+       * <code>.google.protobuf.Timestamp endingDatetime = 3;</code>
+       * @return Whether the endingDatetime field is set.
+       */
+      public boolean hasEndingDatetime() {
+        return endingDatetimeBuilder_ != null || endingDatetime_ != null;
+      }
+      /**
+       * <code>.google.protobuf.Timestamp endingDatetime = 3;</code>
+       * @return The endingDatetime.
+       */
+      public com.google.protobuf.Timestamp getEndingDatetime() {
+        if (endingDatetimeBuilder_ == null) {
+          return endingDatetime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : endingDatetime_;
+        } else {
+          return endingDatetimeBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.google.protobuf.Timestamp endingDatetime = 3;</code>
+       */
+      public Builder setEndingDatetime(com.google.protobuf.Timestamp value) {
+        if (endingDatetimeBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          endingDatetime_ = value;
+          onChanged();
+        } else {
+          endingDatetimeBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.google.protobuf.Timestamp endingDatetime = 3;</code>
+       */
+      public Builder setEndingDatetime(
+          com.google.protobuf.Timestamp.Builder builderForValue) {
+        if (endingDatetimeBuilder_ == null) {
+          endingDatetime_ = builderForValue.build();
+          onChanged();
+        } else {
+          endingDatetimeBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.google.protobuf.Timestamp endingDatetime = 3;</code>
+       */
+      public Builder mergeEndingDatetime(com.google.protobuf.Timestamp value) {
+        if (endingDatetimeBuilder_ == null) {
+          if (endingDatetime_ != null) {
+            endingDatetime_ =
+              com.google.protobuf.Timestamp.newBuilder(endingDatetime_).mergeFrom(value).buildPartial();
+          } else {
+            endingDatetime_ = value;
+          }
+          onChanged();
+        } else {
+          endingDatetimeBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.google.protobuf.Timestamp endingDatetime = 3;</code>
+       */
+      public Builder clearEndingDatetime() {
+        if (endingDatetimeBuilder_ == null) {
+          endingDatetime_ = null;
+          onChanged();
+        } else {
+          endingDatetime_ = null;
+          endingDatetimeBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.google.protobuf.Timestamp endingDatetime = 3;</code>
+       */
+      public com.google.protobuf.Timestamp.Builder getEndingDatetimeBuilder() {
+        
+        onChanged();
+        return getEndingDatetimeFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.google.protobuf.Timestamp endingDatetime = 3;</code>
+       */
+      public com.google.protobuf.TimestampOrBuilder getEndingDatetimeOrBuilder() {
+        if (endingDatetimeBuilder_ != null) {
+          return endingDatetimeBuilder_.getMessageOrBuilder();
+        } else {
+          return endingDatetime_ == null ?
+              com.google.protobuf.Timestamp.getDefaultInstance() : endingDatetime_;
+        }
+      }
+      /**
+       * <code>.google.protobuf.Timestamp endingDatetime = 3;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder> 
+          getEndingDatetimeFieldBuilder() {
+        if (endingDatetimeBuilder_ == null) {
+          endingDatetimeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder>(
+                  getEndingDatetime(),
+                  getParentForChildren(),
+                  isClean());
+          endingDatetime_ = null;
+        }
+        return endingDatetimeBuilder_;
+      }
+
+      private long startingPrice_ ;
+      /**
+       * <code>int64 startingPrice = 4;</code>
+       * @return The startingPrice.
+       */
+      @java.lang.Override
+      public long getStartingPrice() {
+        return startingPrice_;
+      }
+      /**
+       * <code>int64 startingPrice = 4;</code>
+       * @param value The startingPrice to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStartingPrice(long value) {
+        
+        startingPrice_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int64 startingPrice = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStartingPrice() {
+        
+        startingPrice_ = 0L;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:grpc.ProductDetailResponse)
+    }
+
+    // @@protoc_insertion_point(class_scope:grpc.ProductDetailResponse)
+    private static final com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse();
+    }
+
+    public static com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<ProductDetailResponse>
+        PARSER = new com.google.protobuf.AbstractParser<ProductDetailResponse>() {
+      @java.lang.Override
+      public ProductDetailResponse parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new ProductDetailResponse(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<ProductDetailResponse> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<ProductDetailResponse> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.choulatte.scentproduct.grpc.ProductServiceOuterClass.ProductDetailResponse getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_grpc_ProductsPendingRequest_descriptor;
   private static final 
@@ -2672,6 +4271,16 @@ public final class ProductServiceOuterClass {
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_grpc_ProductsInvalidatingResponse_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_grpc_ProductDetailRequest_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_grpc_ProductDetailRequest_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_grpc_ProductDetailResponse_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_grpc_ProductDetailResponse_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -2681,29 +4290,40 @@ public final class ProductServiceOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\024ProductService.proto\022\004grpc\"(\n\026Products" +
-      "PendingRequest\022\016\n\006userId\030\001 \001(\003\"@\n\033Produc" +
-      "tsInvalidatingRequest\022\016\n\006userId\030\001 \001(\003\022\021\n" +
-      "\tproductId\030\002 \003(\003\"\202\001\n\027ProductsPendingResp" +
-      "onse\0224\n\006result\030\001 \001(\0162$.grpc.ProductsPend" +
-      "ingResponse.Result\022\021\n\tproductId\030\002 \003(\003\"\036\n" +
-      "\006Result\022\006\n\002OK\020\000\022\014\n\010CONFLICT\020\001\"y\n\034Product" +
-      "sInvalidatingResponse\0229\n\006result\030\001 \001(\0162)." +
-      "grpc.ProductsInvalidatingResponse.Result" +
-      "\"\036\n\006Result\022\006\n\002OK\020\000\022\014\n\010CONFLICT\020\0012\243\002\n\016Pro" +
-      "ductService\022T\n\025doUserProductsPending\022\034.g" +
-      "rpc.ProductsPendingRequest\032\035.grpc.Produc" +
-      "tsPendingResponse\022V\n\027undoUserProductsPen" +
-      "ding\022\034.grpc.ProductsPendingRequest\032\035.grp" +
-      "c.ProductsPendingResponse\022c\n\032doUserProdu" +
-      "ctsInvalidating\022!.grpc.ProductsInvalidat" +
-      "ingRequest\032\".grpc.ProductsInvalidatingRe" +
-      "sponseB;\n\037com.choulatte.scentproduct.grp" +
-      "cB\030ProductServiceOuterClassb\006proto3"
+      "\n\024ProductService.proto\022\004grpc\032\037google/pro" +
+      "tobuf/timestamp.proto\"(\n\026ProductsPending" +
+      "Request\022\016\n\006userId\030\001 \001(\003\"@\n\033ProductsInval" +
+      "idatingRequest\022\016\n\006userId\030\001 \001(\003\022\021\n\tproduc" +
+      "tId\030\002 \003(\003\"\202\001\n\027ProductsPendingResponse\0224\n" +
+      "\006result\030\001 \001(\0162$.grpc.ProductsPendingResp" +
+      "onse.Result\022\021\n\tproductId\030\002 \003(\003\"\036\n\006Result" +
+      "\022\006\n\002OK\020\000\022\014\n\010CONFLICT\020\001\"y\n\034ProductsInvali" +
+      "datingResponse\0229\n\006result\030\001 \001(\0162).grpc.Pr" +
+      "oductsInvalidatingResponse.Result\"\036\n\006Res" +
+      "ult\022\006\n\002OK\020\000\022\014\n\010CONFLICT\020\001\")\n\024ProductDeta" +
+      "ilRequest\022\021\n\tproductId\030\001 \001(\003\"\353\001\n\025Product" +
+      "DetailResponse\0222\n\006status\030\001 \001(\0162\".grpc.Pr" +
+      "oductDetailResponse.Status\0224\n\020startingDa" +
+      "tetime\030\002 \001(\0132\032.google.protobuf.Timestamp" +
+      "\0222\n\016endingDatetime\030\003 \001(\0132\032.google.protob" +
+      "uf.Timestamp\022\025\n\rstartingPrice\030\004 \001(\003\"\035\n\006S" +
+      "tatus\022\006\n\002OK\020\000\022\013\n\007INVALID\020\0012\360\002\n\016ProductSe" +
+      "rvice\022T\n\025doUserProductsPending\022\034.grpc.Pr" +
+      "oductsPendingRequest\032\035.grpc.ProductsPend" +
+      "ingResponse\022V\n\027undoUserProductsPending\022\034" +
+      ".grpc.ProductsPendingRequest\032\035.grpc.Prod" +
+      "uctsPendingResponse\022c\n\032doUserProductsInv" +
+      "alidating\022!.grpc.ProductsInvalidatingReq" +
+      "uest\032\".grpc.ProductsInvalidatingResponse" +
+      "\022K\n\020getProductDetail\022\032.grpc.ProductDetai" +
+      "lRequest\032\033.grpc.ProductDetailResponseB;\n" +
+      "\037com.choulatte.scentproduct.grpcB\030Produc" +
+      "tServiceOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          com.google.protobuf.TimestampProto.getDescriptor(),
         });
     internal_static_grpc_ProductsPendingRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -2729,6 +4349,19 @@ public final class ProductServiceOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_grpc_ProductsInvalidatingResponse_descriptor,
         new java.lang.String[] { "Result", });
+    internal_static_grpc_ProductDetailRequest_descriptor =
+      getDescriptor().getMessageTypes().get(4);
+    internal_static_grpc_ProductDetailRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_grpc_ProductDetailRequest_descriptor,
+        new java.lang.String[] { "ProductId", });
+    internal_static_grpc_ProductDetailResponse_descriptor =
+      getDescriptor().getMessageTypes().get(5);
+    internal_static_grpc_ProductDetailResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_grpc_ProductDetailResponse_descriptor,
+        new java.lang.String[] { "Status", "StartingDatetime", "EndingDatetime", "StartingPrice", });
+    com.google.protobuf.TimestampProto.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

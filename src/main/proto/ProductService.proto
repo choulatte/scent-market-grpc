@@ -1,6 +1,8 @@
 syntax = "proto3";
 package grpc;
 
+import "google/protobuf/timestamp.proto";
+
 option java_package = "com.choulatte.scentproduct.grpc";
 option java_outer_classname = "ProductServiceOuterClass";
 
@@ -8,6 +10,8 @@ service ProductService {
   rpc doUserProductsPending(ProductsPendingRequest) returns (ProductsPendingResponse);
   rpc undoUserProductsPending(ProductsPendingRequest) returns (ProductsPendingResponse);
   rpc doUserProductsInvalidating(ProductsInvalidatingRequest) returns (ProductsInvalidatingResponse);
+
+  rpc getProductDetail(ProductDetailRequest) returns (ProductDetailResponse);
 }
 
 message ProductsPendingRequest {
@@ -34,4 +38,19 @@ message ProductsInvalidatingResponse {
     CONFLICT = 1;
   }
   Result result = 1;
+}
+
+message ProductDetailRequest {
+  int64 productId = 1;
+}
+
+message ProductDetailResponse {
+  enum Status {
+    OK = 0;
+    INVALID = 1;
+  }
+  Status status = 1;
+  google.protobuf.Timestamp startingDatetime = 2;
+  google.protobuf.Timestamp endingDatetime = 3;
+  int64 startingPrice = 4;
 }
